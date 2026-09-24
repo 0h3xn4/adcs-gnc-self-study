@@ -10,9 +10,7 @@ sobald angelegt).
 ## Kontext
 
 Selbststudium in der Art eines Hochschulkurses, Januar–Juni 2027,
-26 Wochen à ca. 30 h, ausgerichtet auf zwei Zielrollen bei Reflex Aerospace:
-**Control Engineer – Reaction Wheels** und **(Senior) Flight Dynamics
-Engineer**. Referenzliteratur (Kürzel, wie sie in den Wochenaufgaben
+26 Wochen à ca. 30 h. Referenzliteratur (Kürzel, wie sie in den Wochenaufgaben
 verwendet werden):
 
 - **M&C** – Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control*
