@@ -12,7 +12,7 @@
 **Month 2 Self-Check:** Explain your own hardware's schematic/datasheet without aids; sketch the flow of interrupt handling (save context → ISR → restore context) from memory.
 
 ## Scenario
-Before the soldering iron comes out, a systems review (a real requirement at Reflex Aerospace: "System design ... working closely with other team members") demands a clean architecture concept.
+Before the soldering iron comes out, a systems review (a real job-posting requirement: "System design ... working closely with other team members") demands a clean architecture concept.
 
 ## Task
 a) Context diagram (MES 2): the testbed as a black box with all external interfaces (power supply, USB/debug, mechanical mount).
