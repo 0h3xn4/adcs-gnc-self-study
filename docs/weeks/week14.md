@@ -1,25 +1,25 @@
-# Woche 14 – Detumbling, Momentum Dumping, Motor-PID
+# Week 14 – Detumbling, Momentum Dumping, Motor PID
 
-**Monat:** 4 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 4 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Die Ausschreibung verlangt "Parameter tunen, um Performance-Ziele zu erreichen" – diese Woche definierst du selbst messbare Performance-Ziele und weist sie nach.
+## Scenario
+The job posting asks for "tune parameters to meet performance targets" – this week you define your own measurable performance targets and demonstrate them.
 
-## Aufgabenstellung
-a) Performance-Anforderungen für dein Testbed selbst festlegen und dokumentieren: max. Überschwingen ≤ X %, Einschwingzeit (2%-Band) ≤ Y s, stationärer Fehler ≤ Z° – abgeleitet aus verfügbarem Reaction-Wheel-Drehmoment (Woche 5) und geschätzter Testbed-Trägheit.
+## Task
+a) Define and document your own performance requirements for the testbed: max. overshoot ≤ X%, settling time (2% band) ≤ Y s, steady-state error ≤ Z° – derived from the available reaction-wheel torque (Week 5) and the estimated testbed inertia.
 
-b) PID- bzw. Zustandsraum-Regler für Reaction-Wheel-Drehzahl/-Drehmoment entwerfen (MES 14); systematisches Tuning-Verfahren (z. B. Ziegler-Nichols) anwenden UND begründen, wo es an Grenzen stößt (z. B. Motor-Nichtlinearität).
+b) Design a PID or state-space controller for reaction-wheel speed/torque (MES 14); apply a systematic tuning method (e.g. Ziegler-Nichols) AND explain where it reaches its limits (e.g. motor nonlinearity).
 
-c) Sprungantwort-Messungen in Simulation für ≥3 Parametersätze (unter-/kritisch-/überkritisch gedämpft) durchführen, tabellarisch mit Überschwingen/Einschwingzeit/stationärem Fehler dokumentieren.
+c) Run step-response measurements in simulation for ≥3 parameter sets (under-/critically-/over-damped), and document overshoot/settling time/steady-state error in a table.
 
-d) Momentum-Dumping-Strategie (M&C 7.5.2) konzeptionell entwerfen: ab welcher Drehzahl (Datenblatt-Maximum) sättigt dein Reaction Wheel, wie würde ein Magnetorquer den Drehimpuls abbauen (Simulation, auch ohne reale Hardware)?
+d) Conceptually design a momentum-dumping strategy (M&C 7.5.2): at what speed (the datasheet maximum) does your reaction wheel saturate, and how would a magnetorquer dump the angular momentum (in simulation, even without real hardware)?
 
-## Akzeptanzkriterien
-mind. ein Parametersatz erfüllt alle drei selbst gesetzten Ziele gleichzeitig, mit Nachweis in der Tabelle.
+## Acceptance Criteria
+at least one parameter set meets all three self-set targets simultaneously, with evidence in the table.
 
-## Abgabe
-`docs/tuning_report.md` mit Anforderungen, Parametertabelle, Sprungantwort-Plots, Momentum-Dumping-Konzept.
+## Deliverable
+`docs/tuning_report.md` with requirements, parameter table, step-response plots, momentum-dumping concept.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

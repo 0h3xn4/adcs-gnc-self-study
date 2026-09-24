@@ -1,25 +1,25 @@
-# Woche 15 – Feldorientierte Regelung (FOC)
+# Week 15 – Field-Oriented Control (FOC)
 
-**Monat:** 4 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 4 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-"Field Oriented Control" steht explizit in der Ausschreibung – die Kommutierungsstufe, die den Motor wirklich präzise ansteuert.
+## Scenario
+"Field Oriented Control" is stated explicitly in the job posting – the commutation stage that actually drives the motor precisely.
 
-## Aufgabenstellung
-a) Aus dem Motor-Datenblatt Polpaarzahl, Phasenwiderstand/-induktivität, max. Phasenstrom entnehmen; daraus die minimale sinnvolle PWM-Schaltfrequenz begründen.
+## Task
+a) Take the pole-pair count, phase resistance/inductance, and max. phase current from the motor datasheet; use them to justify the minimum sensible PWM switching frequency.
 
-b) Trapez-/Block-Kommutierung implementieren (Hall-Sensor- oder BEMF-Zero-Crossing-basiert); mit Logic Analyzer/Oszilloskop nachweisen, dass phasenrichtig geschaltet wird.
+b) Implement trapezoidal/block commutation (Hall-sensor- or BEMF-zero-crossing-based); use a logic analyzer/oscilloscope to prove that switching is phase-correct.
 
-c) FOC als Aufbaustufe (Clarke-/Park-Transformation, id/iq-Regelung), falls Zeit reicht; sonst explizit als Stretch Goal markieren und die Zeitbudget-Entscheidung im devlog begründen.
+c) FOC as a follow-on stage (Clarke/Park transform, id/iq control), if time allows; otherwise explicitly mark it as a stretch goal and justify the time-budget decision in the devlog.
 
-d) Drehmoment-/Drehzahlregelung aus Woche 14 auf die eigene Kommutierung umstellen (statt fertigem ESC) und die Regelgüte vergleichen – Ergebnis ehrlich dokumentieren, auch wenn "schlechter als die fertige Lösung" herauskommt.
+d) Switch the torque/speed control from Week 14 over to your own commutation (instead of an off-the-shelf ESC) and compare the control performance – document the result honestly, even if it turns out "worse than the off-the-shelf solution".
 
-## Akzeptanzkriterien
-Kommutierung nachweislich phasenrichtig (Messung, nicht "es dreht sich also passt es"); Vergleich eigene vs. vorherige Ansteuerung quantitativ dokumentiert.
+## Acceptance Criteria
+Commutation demonstrably phase-correct (a measurement, not "it spins so it must be fine"); comparison of your own vs. the previous drive quantitatively documented.
 
-## Abgabe
-`firmware/motor_control/`, Logic-Analyzer-Messung, Vergleichsreport.
+## Deliverable
+`firmware/motor_control/`, logic-analyzer measurement, comparison report.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

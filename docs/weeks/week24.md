@@ -1,25 +1,25 @@
-# Woche 24 – Hardware-in-the-Loop (HIL)
+# Week 24 – Hardware-in-the-Loop (HIL)
 
-**Monat:** 6 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 6 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Die Simulation lügt nie über Software-Bugs, aber auch nie über reale Hardware-Unzulänglichkeiten – HIL zeigt, wo beides auseinanderläuft.
+## Scenario
+Simulation never lies about software bugs, but it also never lies about real hardware shortcomings – HIL shows where the two diverge.
 
-## Aufgabenstellung
-a) Schnittstelle SIL↔Hardware definieren: welche Größe fließt in welche Richtung (z. B. Soll-Attitude/Soll-Drehrate von der Missionssimulation zur Hardware, erreichte Lage zurück in die übergeordnete Simulation)?
+## Task
+a) Define the SIL↔hardware interface: which quantity flows in which direction (e.g. target attitude/target rate from the mission simulation to the hardware, achieved attitude back into the overarching simulation)?
 
-b) Kommunikationsprotokoll implementieren (z. B. UART/USB) inkl. Zeitstempel-Synchronisation zwischen PC-Simulation und MCU.
+b) Implement a communication protocol (e.g. UART/USB) including timestamp synchronization between the PC simulation and the MCU.
 
-c) Das Szenario aus Woche 23 als HIL-Lauf wiederholen: Lageregelung läuft real auf der Hardware, Bahndynamik bleibt simuliert.
+c) Repeat the Week 23 scenario as a HIL run: attitude control runs for real on the hardware, orbit dynamics remain simulated.
 
-d) Direkter Vergleich SIL vs. HIL für dieselbe Szenario-Definition: wo weicht die reale Trajektorie ab (Reibung, Sensorrauschen, Aktuatorsättigung, Kommunikationslatenz), und wie groß ist die Abweichung quantitativ?
+d) Direct SIL vs. HIL comparison for the same scenario definition: where does the real trajectory deviate (friction, sensor noise, actuator saturation, communication latency), and how large is the deviation quantitatively?
 
-## Akzeptanzkriterien
-HIL-Lauf durchläuft dieselben Modi (Detumble→Point→Manöverauslösung) wie die SIL-Referenz; Abweichungsanalyse benennt ≥2 konkrete Ursachen mit bezifferter Größenordnung.
+## Acceptance Criteria
+HIL run goes through the same modes (detumble→point→maneuver trigger) as the SIL reference; the deviation analysis names ≥2 concrete causes with a quantified order of magnitude.
 
-## Abgabe
-`integration/hil_run.md`, Vergleichsplots SIL vs. HIL, Abweichungsanalyse.
+## Deliverable
+`integration/hil_run.md`, SIL vs. HIL comparison plots, deviation analysis.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

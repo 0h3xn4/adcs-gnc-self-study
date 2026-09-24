@@ -1,27 +1,27 @@
-# Woche 04 – Bahnmechanik II (Störungen, J2)
+# Week 04 – Orbital Mechanics II (Perturbations, J2)
 
-**Monat:** 1 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 1 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Reine Zweikörpermechanik reicht nicht, um die reale säkulare Drift eines sonnensynchronen Orbits abzubilden.
+## Scenario
+Pure two-body mechanics isn't enough to capture the real secular drift of a sun-synchronous orbit.
 
-## Aufgabenstellung
-a) J2-Störbeschleunigung (M&C 10.3.1) implementieren und additiv integrieren.
+## Task
+a) Implement the J2 perturbing acceleration (M&C 10.3.1) and integrate it additively.
 
-b) Für das TLE aus Woche 3: säkulare RAAN-/Perigäumsdrift analytisch (M&C 10.4.3) berechnen und mit der über z. B. 30 Tage simulierten Drift vergleichen (Zielabweichung < 5 %, Abweichung sonst begründen).
+b) For the TLE from Week 3: compute the secular RAAN/perigee drift analytically (M&C 10.4.3) and compare it with the drift simulated over, e.g., 30 days (target deviation < 5%, otherwise justify the deviation).
 
-c) Sonnensynchronen Orbit auslegen: für selbst gewählte Höhe h die Inklination i für dΩ/dt=360°/365.25 Tage berechnen (M&C 10.4.4) und mit dem Propagator verifizieren.
+c) Design a sun-synchronous orbit: for a self-chosen altitude h, compute the inclination i for dΩ/dt=360°/365.25 days (M&C 10.4.4) and verify it with the propagator.
 
-d) `spacecraft-dynamics-core` als v0.1.0 taggen, CHANGELOG mit allen vier Wochenergebnissen.
+d) Tag `spacecraft-dynamics-core` as v0.1.0, with a CHANGELOG covering all four weeks' results.
 
-e) Selbstprüfung Monat 1 (schriftlich, ohne Notizen, im devlog): Quaternion-Kinematik q̇=½Ω(ω)q herleiten; Kepler-Gleichung und ihre Transzendenz erklären; Ursache des Tennisschläger-Effekts in einem Satz.
+e) Month 1 self-check (written, without notes, in the devlog): derive the quaternion kinematics q̇=½Ω(ω)q; explain Kepler's equation and its transcendence; state the cause of the tennis-racket effect in one sentence.
 
-## Akzeptanzkriterien
-berechnete Sonnensynchron-Inklination weicht < 0.1° von der verifizierten ab; alle Tests grün; Selbstprüfung mit ausgeschriebenen Herleitungen im devlog.
+## Acceptance Criteria
+computed sun-synchronous inclination deviates < 0.1° from the verified value; all tests green; self-check with fully written-out derivations in the devlog.
 
-## Abgabe
-J2-Propagator, Sonnensynchron-Auslegung, Release v0.1.0, devlog-Selbstprüfung.
+## Deliverable
+J2 propagator, sun-synchronous design, release v0.1.0, devlog self-check.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

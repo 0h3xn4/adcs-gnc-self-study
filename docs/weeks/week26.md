@@ -1,25 +1,25 @@
-# Woche 26 – Portfolio & Bewerbung (Gesamtmeilenstein)
+# Week 26 – Portfolio & Job Application (overall milestone)
 
-**Monat:** 6 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 6 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Das Projekt ist technisch fertig – jetzt muss es jemand außerhalb deines Kopfes verstehen und dir dafür einen Job anbieten wollen.
+## Scenario
+The project is technically done – now someone outside your own head has to understand it and want to offer you a job because of it.
 
-## Aufgabenstellung
-a) Alle devlog-Einträge zu 2–3 abgeschlossenen technischen Artikeln verdichten (z. B. "Vom Gyro-Rauschen zum Echtzeit-MEKF auf einem Mikrocontroller"); jeder Artikel: Problem, Ansatz, konkrete Ergebnisse (Zahlen/Plots), Learnings inkl. mindestens eines Fehlschlags.
+## Task
+a) Distill all the devlog entries into 2–3 finished technical articles (e.g. "From Gyro Noise to a Real-Time MEKF on a Microcontroller"); each article: problem, approach, concrete results (numbers/plots), learnings including at least one failure.
 
-b) Demo-Video(s) (Detumbling, HIL-Lauf) schneiden/verlinken, ins README einbetten.
+b) Edit/link the demo video(s) (detumbling, HIL run), and embed them in the README.
 
-c) Aus der Rückverfolgbarkeitstabelle (Abschnitt 2 der Übersicht) eine kompakte Version für Anschreiben/Interviews ableiten: pro Job-Anforderung ein Satz, was konkret gebaut wurde, plus die ehrlich benannten Lücken (kein echtes GNSS/Triebwerk) inkl. Umgang damit im Gespräch.
+c) Derive a compact version of the traceability table (Section 2 of the overview) for cover letters/interviews: one sentence per job requirement on what was concretely built, plus the honestly named gaps (no real GNSS/thruster) including how to address them in conversation.
 
-d) Schriftlich vorbereitetes Mock-Interview zu mind.: Herleitung der Quaternion-Kinematik, additive vs. multiplicative EKF-Formulierung, PID- vs. Zustandsraum-Regler-Trade-offs, Clohessy-Wiltshire-Annahmen und deren Gültigkeitsgrenzen, warum Batch-LS und EKF zur Bahnbestimmung unterschiedliche Ergebnisse liefern können.
+d) A written mock-interview prep covering at least: derivation of the quaternion kinematics, additive vs. multiplicative EKF formulation, PID vs. state-space controller trade-offs, Clohessy-Wiltshire assumptions and their validity limits, why batch-LS and EKF can give different results for orbit determination.
 
-## Akzeptanzkriterien
-mind. 2 technische Artikel fertig und verlinkt; Mock-Interview-Antworten schriftlich vorhanden (nicht nur "im Kopf vorbereitet").
+## Acceptance Criteria
+at least 2 technical articles finished and linked; mock-interview answers exist in writing (not just "prepared in your head").
 
-## Abgabe
-fertiges Portfolio-Repo, technische Artikel, Mock-Interview-Notizen, Selbstprüfung Monat 6 im devlog.
+## Deliverable
+finished portfolio repo, technical articles, mock-interview notes, Month 6 self-check in the devlog.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

@@ -1,25 +1,25 @@
-# Woche 12 – MEKF auf Hardware
+# Week 12 – MEKF on Hardware
 
-**Monat:** 3 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 3 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Der MEKF muss jetzt in Echtzeit auf echten, driftenden Sensoren laufen – der Moment, in dem Simulationsannahmen an der Realität scheitern können.
+## Scenario
+The MEKF now has to run in real time on real, drifting sensors – the moment where simulation assumptions can fail against reality.
 
-## Aufgabenstellung
-a) MEKF-Kern nach C portieren; Zykluszeit (Propagation+Update) auf der Ziel-MCU messen und mit der verfügbaren Zeit pro Sample (System-Tick aus Woche 7) vergleichen (Ziel: < 50 % der verfügbaren Zeit).
+## Task
+a) Port the MEKF core to C; measure the cycle time (propagation + update) on the target MCU and compare it against the time available per sample (the system tick from Week 7) (target: < 50% of the available time).
 
-b) Q/R NICHT aus der Simulation übernehmen, sondern aus einer eigenen Stillstandsmessung deiner realen Hardware neu bestimmen (Allan-Varianz oder Stichproben-Standardabweichung über \~60 s Stillstand).
+b) Do NOT carry Q/R over from the simulation – redetermine them from your own static measurement on the real hardware (Allan variance or sample standard deviation over ~60 s at rest).
 
-c) Echtzeit-Schätzung über UART/Logging ausgeben; unabhängige Referenz aufbauen (z. B. Drehteller mit Winkelskala, bekannte Winkel 0°→90°→180°, oder Video mit Bildauswertung).
+c) Output the real-time estimate over UART/logging; build an independent reference (e.g. a turntable with an angle scale at known angles 0°→90°→180°, or video with image analysis).
 
-d) Grobes Fehlerbudget aufstellen: welcher Anteil der Abweichung zur Referenz kommt vermutlich aus Sensorrauschen, welcher aus Montage-/Kalibrierfehlern, welcher aus der Ungenauigkeit der Referenzmethode selbst?
+d) Set up a rough error budget: how much of the deviation from the reference likely comes from sensor noise, how much from mounting/calibration errors, and how much from the inaccuracy of the reference method itself?
 
-## Akzeptanzkriterien
-Echtzeit-Zykluszeit hält die 50 %-Marge ein; Schätzfehler gegen Referenz beziffert und mit dem Simulations-RMS aus Woche 11 verglichen (real meist größer – falls kleiner, Messmethode hinterfragen).
+## Acceptance Criteria
+Real-time cycle time stays within the 50% margin; estimation error against the reference is quantified and compared with the simulation RMS from Week 11 (real error is usually larger – if smaller, question the measurement method).
 
-## Abgabe
-`firmware/mekf.c`, Timing-Messung, Vergleichsplot Schätzung vs. Referenz, Fehlerbudget-Tabelle, Selbstprüfung Monat 3 im devlog.
+## Deliverable
+`firmware/mekf.c`, timing measurement, comparison plot of estimate vs. reference, error-budget table, Month 3 self-check in the devlog.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

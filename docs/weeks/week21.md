@@ -1,25 +1,25 @@
-# Woche 21 – Monte-Carlo-Validierung
+# Week 21 – Monte Carlo Validation
 
-**Monat:** 5 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 5 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-"Validate guidance concepts via Monte Carlo analysis" steht wörtlich in der Ausschreibung – dieses Werkzeug entsteht hier.
+## Scenario
+"Validate guidance concepts via Monte Carlo analysis" is stated literally in the job posting – this tool is built here.
 
-## Aufgabenstellung
-a) Monte-Carlo-Framework für das RPO-Szenario (Woche 20): Anfangszustand, Navigationsfehler während des Anflugs, Manöverausführungsfehler (z. B. ±X % ΔV) als Zufallsvariablen mit begründeten Verteilungen.
+## Task
+a) Monte Carlo framework for the RPO scenario (Week 20): initial state, navigation error during the approach, maneuver execution error (e.g. ±X% ΔV) as random variables with justified distributions.
 
-b) ≥1000 Läufe automatisiert (Batch-Skript) durchführen, Miss-Distance und minimalen Abstand je Lauf speichern.
+b) Run ≥1000 runs automated (a batch script), saving miss distance and minimum separation per run.
 
-c) Statistische Auswertung: Histogramm der Miss-Distance, Mittelwert/Streuung, Anteil der Läufe, die eine selbst definierte Sicherheitsgrenze verletzen (als Prozentzahl).
+c) Statistical evaluation: histogram of the miss distance, mean/spread, and the fraction of runs that violate a self-defined safety limit (as a percentage).
 
-d) Sensitivitätsranking per One-at-a-Time-Variation: welcher Fehlerterm treibt die Streuung der Miss-Distance am stärksten?
+d) Sensitivity ranking via one-at-a-time variation: which error term drives the spread of the miss distance the most?
 
-## Akzeptanzkriterien
-1000-Läufe-Statistik mit konkreter Verletzungsrate vorhanden; Sensitivitätsranking benennt klar den dominierenden Fehlerterm mit Begründung.
+## Acceptance Criteria
+1000-run statistics available with a concrete violation rate; sensitivity ranking clearly names the dominant error term with justification.
 
-## Abgabe
-`flight_dynamics/monte_carlo.py`, Histogramm + Sensitivitätsranking-Report.
+## Deliverable
+`flight_dynamics/monte_carlo.py`, histogram + sensitivity-ranking report.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

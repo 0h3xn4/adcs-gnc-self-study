@@ -1,20 +1,21 @@
-# Devlog – Woche NN
+# Devlog – Week NN
 
-**Datum:** JJJJ-MM-TT – JJJJ-MM-TT
-**Bezug:** [docs/weeks/weekNN.md](../weeks/weekNN.md)
+**Date:** YYYY-MM-DD – YYYY-MM-DD
+**Reference:** [docs/weeks/weekNN.md](../weeks/weekNN.md)
 
-## Was hat funktioniert?
+## What worked?
 
-## Was hat nicht funktioniert?
+## What didn't work?
 
-## Offene Fragen / nächste Schritte
+## Open questions / next steps
 
-## Zeitaufwand
-_(grob, z. B. für den Abgleich mit den 30 h/Woche aus dem_ [Stundenplan](../schedule.md)_)_
+## Time spent
+_(rough figure, e.g. to check against the 30 h/week in the_ [schedule](../schedule.md)_)_
 
 ---
 
-Kurz und ehrlich halten (siehe Freitagnachmittag im [Stundenplan](../schedule.md)) –
-das ist die Rohfassung der Bewerbungsartikel aus Woche 26, kein polierter Blogpost.
+Keep it short and honest (see Friday afternoon in the [schedule](../schedule.md)) –
+this is the rough draft for the application articles in Week 26, not a
+polished blog post.
 
-Neuen Eintrag anlegen: diese Datei nach `weekNN.md` kopieren (z. B. `week01.md`).
+To start a new entry: copy this file to `weekNN.md` (e.g. `week01.md`).

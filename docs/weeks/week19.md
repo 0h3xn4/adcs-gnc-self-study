@@ -1,27 +1,27 @@
-# Woche 19 – Manöverplanung & Delta-V-Budget
+# Week 19 – Maneuver Planning & Delta-V Budget
 
-**Monat:** 5 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 5 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Die Missionsplanung braucht ein belastbares Delta-V-Budget, bevor über Treibstoffmasse und Missionsdauer entschieden wird.
+## Scenario
+Mission planning needs a solid delta-v budget before propellant mass and mission duration can be decided.
 
-## Aufgabenstellung
-a) Hohmann-Transfer zwischen zwei Kreisbahnen herleiten und implementieren (ΔV₁, ΔV₂, Transferzeit); für ein Beispiel (z. B. 500→700 km) numerisch nachrechnen.
+## Task
+a) Derive and implement a Hohmann transfer between two circular orbits (ΔV₁, ΔV₂, transfer time); work through an example numerically (e.g. 500→700 km).
 
-b) Bielliptischen Transfer implementieren und zeigen, ab welchem Radienverhältnis er effizienter als Hohmann wird (Herleitung nachvollziehen, nicht nur zitieren).
+b) Implement a bi-elliptic transfer and show at which radius ratio it becomes more efficient than Hohmann (work through the derivation, don't just cite it).
 
-c) Lambert-Problem-Löser implementieren (z. B. universelle Variablen): gegeben r₁, r₂, Δt → gesuchte Geschwindigkeiten, für ein Testfall-Paar lösen.
+c) Implement a Lambert problem solver (e.g. universal variables): given r₁, r₂, Δt → solve for the unknown velocities, for one test-case pair.
 
-d) Delta-V-Budget-Tool bauen, das für ein selbst definiertes Missionsszenario (z. B. Einschuss-Fehlerkorrektur + Bahnanhebung + 1 Jahr Stationhaltung) alle Beiträge inkl. begründeter Sicherheitsmarge aufsummiert.
+d) Build a delta-v budget tool that sums up all contributions – including a justified margin – for a self-defined mission scenario (e.g. insertion-error correction + orbit raising + 1 year of station-keeping).
 
-e) Cross-Validierung: mind. den Hohmann-Fall mit Orekit/GMAT nachrechnen, Delta-V-Abweichung < 1 % erwartet.
+e) Cross-validate: recompute at least the Hohmann case with Orekit/GMAT; a delta-v deviation < 1% is expected.
 
-## Akzeptanzkriterien
-Lambert-Löser liefert für den Testfall energetisch plausible Geschwindigkeiten (Energie-Check); Cross-Validierung Hohmann < 1 % Abweichung.
+## Acceptance Criteria
+Lambert solver yields energetically plausible velocities for the test case (an energy check); Hohmann cross-validation deviates < 1%.
 
-## Abgabe
-`flight_dynamics/maneuver_planning.py`, Delta-V-Budget-Report, Cross-Validierungsnachweis.
+## Deliverable
+`flight_dynamics/maneuver_planning.py`, delta-v budget report, cross-validation evidence.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

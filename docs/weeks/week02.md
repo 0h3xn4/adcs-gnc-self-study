@@ -1,28 +1,28 @@
-# Woche 02 – Lagekinematik & -dynamik
+# Week 02 – Attitude Kinematics & Dynamics
 
-**Monat:** 1 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 1 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Dein Starrkörper-Propagator soll später als Referenz für MEKF (Monat 3) und Regler (Monat 4) dienen – er muss Energie/Drehimpuls über lange Zeiträume sauber erhalten.
+## Scenario
+Your rigid-body propagator will later serve as the reference for the MEKF (Month 3) and the controller (Month 4) – it must conserve energy/angular momentum cleanly over long time spans.
 
-## Gegeben
-Trägheitstensor eines asymmetrischen Körpers (z. B. I=diag(0.02,0.03,0.04) kg·m² – eigene, dokumentierte Annahme für deinen Testbed-Maßstab), Anfangswinkelgeschwindigkeit ω₀.
+## Given
+Inertia tensor of an asymmetric body (e.g. I=diag(0.02,0.03,0.04) kg·m² – your own, documented assumption sized to your testbed), initial angular velocity ω₀.
 
-## Aufgabenstellung
-a) Euler-Momentengleichungen (M&C 3.3.2) als ODE-System (ω̇,q̇) mit RK4 integrieren; Schrittweite Δt so wählen, dass die höchste Eigenfrequenz mit ≥10 Punkten/Periode aufgelöst wird (Rechnung zeigen).
+## Task
+a) Integrate Euler's moment equations (M&C 3.3.2) as an ODE system (ω̇,q̇) with RK4; choose the step size Δt so that the highest eigenfrequency is resolved with ≥10 points per period (show the calculation).
 
-b) Torque-free-Fall: Polhode-Trajektorie (M&C 3.3.4) für I₁≠I₂≠I₃ reproduzieren; "Tennisschläger-Effekt" (Instabilität um die mittlere Hauptachse) durch Simulation mit kleiner Störung zeigen.
+b) Torque-free case: reproduce the polhode trajectory (M&C 3.3.4) for I₁≠I₂≠I₃; demonstrate the "tennis racket effect" (instability about the intermediate principal axis) by simulating with a small perturbation.
 
-c) Energie T=½ωᵀIω und ‖L‖=‖Iω‖ über 10.000 Schritte plotten; relative Drift beider Größen muss < 1e-6 bleiben (sonst Schrittweite verkleinern oder Integrator wechseln, Unterschied dokumentieren).
+c) Plot energy T=½ωᵀIω and ‖L‖=‖Iω‖ over 10,000 steps; the relative drift of both quantities must stay < 1e-6 (otherwise shrink the step size or switch integrators, and document the difference).
 
-d) Stretch: Gravitationsgradienten-Störmoment (M&C 3.3.6) ergänzen.
+d) Stretch: add the gravity-gradient disturbance torque (M&C 3.3.6).
 
-## Akzeptanzkriterien
-Polhode-Plot zeigt geschlossene Kurven für stabile Achsen und Divergenz um die mittlere Achse; Energie-/Drehimpulsdrift < 1e-6.
+## Acceptance Criteria
+Polhode plot shows closed curves for the stable axes and divergence about the intermediate axis; energy/angular-momentum drift < 1e-6.
 
-## Abgabe
-`sim/rigid_body_propagator.py`, `sim/tests/test_conservation.py`, Plots in `docs/figures/week02/`.
+## Deliverable
+`sim/rigid_body_propagator.py`, `sim/tests/test_conservation.py`, plots in `docs/figures/week02/`.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

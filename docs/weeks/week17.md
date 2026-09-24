@@ -1,25 +1,25 @@
-# Woche 17 (Puffer) – Testkampagne & Charakterisierung
+# Week 17 (Buffer) – Test Campaign & Characterization
 
-**Monat:** 4 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 4 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Ein einzelner Testlauf beweist nichts – "Control Robustness" (wörtlich aus der Ausschreibung) verlangt eine systematische Kampagne.
+## Scenario
+A single test run proves nothing – "control robustness" (literally from the job posting) demands a systematic campaign.
 
-## Aufgabenstellung
-a) Testmatrix: Sprungantwort aus Ruhelage, Sprungantwort aus bewegter Ausgangslage, Störgrößenaufschaltung (manueller Anstoß in `POINT`), Parametervariation (Zusatzmasse ändert Trägheit), Grenzfall nahe Aktuatorsättigung.
+## Task
+a) Test matrix: step response from rest, step response from a moving initial state, disturbance injection (a manual push while in `POINT`), parameter variation (added mass changes inertia), an edge case near actuator saturation.
 
-b) Jeden Fall ≥3× wiederholen (Streuung/Reproduzierbarkeit zeigen, keine Einzelmessung als Beweis).
+b) Repeat each case ≥3 times (show spread/reproducibility, no single measurement as proof).
 
-c) Ergebnisse gegen die Woche-14-Ziele auswerten: welche werden unter realen Bedingungen (noch) erfüllt, welche nicht, und warum (Reibung, Rauschen, Aktuatorlimits)?
+c) Evaluate the results against the Week 14 targets: which are (still) met under real conditions, which aren't, and why (friction, noise, actuator limits)?
 
-d) Testbericht im Stil eines Qualifikationstests schreiben: Testziel, Aufbau, Vorgehen, Ergebnis, Bewertung je Kriterium (bestanden/nicht bestanden) – Vorstufe zur Verifikationsmatrix in Monat 6.
+d) Write a test report in the style of a qualification test: test objective, setup, procedure, result, pass/fail assessment per criterion – a precursor to the verification matrix in Month 6.
 
-## Akzeptanzkriterien
-Testbericht deckt die gesamte Matrix ab mit klarer Pass/Fail-Bewertung je Woche-14-Ziel; mind. ein NICHT erfülltes Ziel wird ehrlich dokumentiert und begründet.
+## Acceptance Criteria
+Test report covers the entire matrix with a clear pass/fail rating per Week 14 target; at least one UNMET target is documented and explained honestly.
 
-## Abgabe
-`docs/test_report_adcs.md`, finales Demo-Video Monat 4, Selbstprüfung Monat 4 im devlog.
+## Deliverable
+`docs/test_report_adcs.md`, final Month 4 demo video, Month 4 self-check in the devlog.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

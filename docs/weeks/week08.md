@@ -1,27 +1,27 @@
-# Woche 08 – Zustandsmaschinen & Watchdog
+# Week 08 – State Machines & Watchdog
 
-**Monat:** 2 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 2 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Die Stellenausschreibung verlangt explizit "eine Zustandsmaschine für Reaction Wheels" – das Grundgerüst dafür entsteht hier.
+## Scenario
+The job posting explicitly asks for "a state machine for reaction wheels" – its foundation is built here.
 
-## Aufgabenstellung
-a) Zustände `INIT`, `IDLE`, `DETUMBLE`, `POINT`, `SAFE`, `FAULT` als Übergangstabelle (table-driven, MES 6) definieren – keine verschachtelte if/switch-Kaskade.
+## Task
+a) Define states `INIT`, `IDLE`, `DETUMBLE`, `POINT`, `SAFE`, `FAULT` as a transition table (table-driven, MES 6) – no nested if/switch cascade.
 
-b) Jeder Zustand mit Entry-/Do-/Exit-Aktion; dokumentiere je Zustand, welche Aktuatoren/Sensoren aktiv sind (z. B. `SAFE`: Motor aus, nur Logging).
+b) Each state with entry/do/exit actions; document for each state which actuators/sensors are active (e.g. `SAFE`: motor off, logging only).
 
-c) Watchdog integrieren; bewusst eine Endlosschleife/einen Deadlock provozieren und den Watchdog-Reset nachweisen.
+c) Integrate a watchdog; deliberately provoke an infinite loop/deadlock and demonstrate the watchdog reset.
 
-d) Timeout-basierter Übergang nach `SAFE`, wenn ein erwartetes Sensor-Update ausbleibt (eigene Zustandslogik, nicht erst der Watchdog-Reset).
+d) Timeout-based transition to `SAFE` if an expected sensor update fails to arrive (your own state logic, not just the watchdog reset).
 
-e) Abschlussdemo: Video, das alle Zustände inkl. eines bewusst injizierten Fehlerfalls (Kabel während des Betriebs ziehen) zeigt.
+e) Final demo: a video showing all states including a deliberately injected fault (unplugging a cable during operation).
 
-## Akzeptanzkriterien
-Übergangstabelle vollständig ohne undokumentierte Default-Übergänge; Fehlerfall im Video führt nachweislich zu korrektem `SAFE`-Übergang ohne Absturz.
+## Acceptance Criteria
+Transition table complete with no undocumented default transitions; the fault case in the video demonstrably leads to the correct `SAFE` transition without a crash.
 
-## Abgabe
-`firmware/state_machine.c` + Zustandsdiagramm in `docs/`, Demo-Video, Selbstprüfung Monat 2 im devlog (z. B. table-driven vs. switch-Kaskade: Vor-/Nachteile).
+## Deliverable
+`firmware/state_machine.c` + state diagram in `docs/`, demo video, Month 2 self-check in the devlog (e.g. table-driven vs. switch cascade: pros/cons).
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

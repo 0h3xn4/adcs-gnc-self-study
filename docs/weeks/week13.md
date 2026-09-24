@@ -1,36 +1,36 @@
-# Woche 13 – Quaternion-Feedback-Regelung
+# Week 13 – Quaternion Feedback Control
 
-**Monat:** 4 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 4 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Monatsziel (Monat 4 – Lageregelung (Kernmodul für den Reaction-Wheel-Job))
+## Month Goal (Month 4 – Attitude Control (Core Module for the Reaction-Wheel Job))
 
-**Ziel des Monats:** Vom Regelgesetz in Simulation zum physischen, FDIR-fähigen Regelkreis auf echter Hardware.
+**Month Goal:** From a control law in simulation to a physical, FDIR-capable closed control loop on real hardware.
 
-**Meilenstein M4 (zentraler Projektmeilenstein):** Physischer Einachs-Demonstrator, der sich selbst detumbled und eine Soll-Orientierung hält/verfolgt – ausschließlich mit selbstgebautem Reaction-Wheel-Aktuator, eigener Firmware (State Machine, FDIR, Regelung, FOC) und eigenem MEKF.
+**Milestone M4 (central project milestone):** A physical single-axis demonstrator that detumbles itself and holds/tracks a target orientation – using exclusively a self-built reaction-wheel actuator, your own firmware (state machine, FDIR, control, FOC), and your own MEKF.
 
-**Selbstprüfung Monat 4:** Momentum-Dumping-Strategie erklären; PID- vs. Zustandsraum-Regler für den eigenen Aufbau gegenüberstellen.
+**Month 4 Self-Check:** Explain a momentum-dumping strategy; compare PID vs. state-space control for your own setup.
 
-## Szenario
-Der AOCS-Lead verlangt einen nachweisbar stabilen Regler, bevor an reale Aktuatoren gedacht wird – Regler zuerst in Simulation beweisen.
+## Scenario
+The AOCS lead requires a provably stable controller before real actuators are even considered – prove the controller in simulation first.
 
-## Gegeben
-Starrkörper-Simulator (Monat 1); diese Woche mit "wahrer" Lage aus der Simulation arbeiten (nicht mit MEKF-Schätzung), um Regler- und Schätzfehler nicht zu vermischen.
+## Given
+the rigid-body simulator (Month 1); this week, work with the "true" attitude from the simulation (not the MEKF estimate), so controller and estimation errors aren't mixed together.
 
-## Aufgabenstellung
-a) Quaternion-Feedback-Regelgesetz (M&C 7.2, Regulation Case) herleiten (Struktur/Vorzeichen selbst nachvollziehen) und implementieren.
+## Task
+a) Derive the quaternion-feedback control law (M&C 7.2, regulation case) — work through the structure/signs yourself — and implement it.
 
-b) Ljapunov-Funktion V=k(1−|δq₄|)+½ωᵀIω (M&C 7.2) aufstellen und zeigen, dass V̇≤0 für dein Regelgesetz gilt – als ausgeschriebene Herleitung im devlog.
+b) Set up the Lyapunov function V=k(1−|δq₄|)+½ωᵀIω (M&C 7.2) and show that V̇≤0 holds for your control law – as a fully written-out derivation in the devlog.
 
-c) Simulation für ≥5 Anfangslagen (inkl. eines Falls nahe 180°, "Unwinding"-Problem) durchführen; tritt Unwinding auf, Ursache erklären und per Vorzeichenkorrektur (δq₄<0 → δq negieren) beheben.
+c) Run the simulation for ≥5 initial attitudes (including a case near 180°, the "unwinding" problem); if unwinding occurs, explain the cause and fix it with a sign correction (δq₄<0 → negate δq).
 
-d) Tracking Case (M&C 7.3) ergänzen: Regler folgt einer Referenztrajektorie (z. B. konstante Drehrate); Regelfehler über die Zeit plotten.
+d) Add the tracking case (M&C 7.3): the controller follows a reference trajectory (e.g. a constant angular rate); plot the control error over time.
 
-## Akzeptanzkriterien
-alle 5 Anfangslagen konvergieren ohne Unwinding auf < 1° Restfehler; Ljapunov-Herleitung im devlog nachvollziehbar ausgeschrieben.
+## Acceptance Criteria
+all 5 initial attitudes converge without unwinding to < 1° residual error; the Lyapunov derivation is fully and traceably written out in the devlog.
 
-## Abgabe
-`control/quaternion_feedback.py`, Konvergenzplots, Ljapunov-Herleitung im devlog.
+## Deliverable
+`control/quaternion_feedback.py`, convergence plots, Lyapunov derivation in the devlog.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

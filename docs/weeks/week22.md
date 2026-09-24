@@ -1,27 +1,27 @@
-# Woche 22 (Puffer) – Autonome Bahnregelung
+# Week 22 (Buffer) – Autonomous Orbit Control
 
-**Monat:** 5 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 5 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Guidance allein reicht nicht – irgendwann muss ein System ohne ständigen Bodenkontakt seine Bahn halten.
+## Scenario
+Guidance alone isn't enough – eventually a system has to maintain its orbit without constant ground contact.
 
-## Aufgabenstellung
-a) Autonomen Stationhalte-Regler entwerfen: Toleranzband für einen Bahnparameter (z. B. Bahnhöhe) definieren, bei Überschreiten automatisch Korrekturmanöver (Woche 19) auslösen.
+## Task
+a) Design an autonomous station-keeping controller: define a tolerance band for one orbital parameter (e.g. altitude), and automatically trigger a correction maneuver (Week 19) when it's exceeded.
 
-b) Über mehrere Orbits (z. B. 30 Tage) inkl. J2-Störung (Monat 1) in Simulation testen.
+b) Test it in simulation over multiple orbits (e.g. 30 days) including the J2 perturbation (Month 1).
 
-c) Regelgüte bewerten: Anzahl nötiger Korrekturmanöver, aufsummiertes Delta-V, maximale Abweichung zwischen Korrekturen.
+c) Assess the control performance: number of correction maneuvers needed, cumulative delta-v, maximum deviation between corrections.
 
-d) Trade-off begründet entscheiden: engeres Toleranzband → häufigere Manöver/mehr Delta-V vs. engere Bahnkontrolle.
+d) Make a justified trade-off decision: a tighter tolerance band → more frequent maneuvers/more delta-v vs. tighter orbit control.
 
-e) `flight-dynamics-toolkit` als v0.1.0 taggen, CHANGELOG mit allen Wochenergebnissen.
+e) Tag `flight-dynamics-toolkit` as v0.1.0, with a CHANGELOG covering all the week's results.
 
-## Akzeptanzkriterien
-Regler hält den Bahnparameter über die gesamte Dauer im definierten Toleranzband; Delta-V-Verbrauch beziffert und dem Trade-off gegenübergestellt.
+## Acceptance Criteria
+Controller keeps the orbital parameter within the defined tolerance band for the entire duration; delta-v consumption is quantified and set against the trade-off.
 
-## Abgabe
-`flight_dynamics/orbit_control.py`, Trade-off-Report, Release v0.1.0, Selbstprüfung Monat 5 im devlog.
+## Deliverable
+`flight_dynamics/orbit_control.py`, trade-off report, release v0.1.0, Month 5 self-check in the devlog.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_
