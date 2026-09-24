@@ -1,25 +1,25 @@
-# Woche 25 – ECSS-orientierte Dokumentation
+# Week 25 – ECSS-Style Documentation
 
-**Monat:** 6 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 6 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Ohne Nachweisdokumentation zählt ein System in der Raumfahrt nicht als "fertig" – Übersetzung des Projekts in ECSS-artige Nachweisdokumente.
+## Scenario
+Without verification documentation, a system in spaceflight doesn't count as "done" – translating the project into ECSS-style verification documents.
 
-## Aufgabenstellung
-a) Anforderungsdokument: alle über 26 Wochen explizit/implizit gesetzten Anforderungen (Performance-Ziele Woche 14, Sicherheitsabstände Woche 20/21, Timing-Anforderungen Woche 7/12 usw.) einheitlich nummeriert (z. B. REQ-CTRL-001) mit Sollwert und Begründung sammeln.
+## Task
+a) Requirements document: collect all requirements set explicitly or implicitly over the 26 weeks (performance targets Week 14, safety separations Week 20/21, timing requirements Week 7/12, etc.), uniformly numbered (e.g. REQ-CTRL-001), each with a target value and rationale.
 
-b) Verifikationsmatrix: pro Anforderung Testmethode (Analyse/Simulation/Test), Verweis auf den konkreten Testbericht/-lauf, Ergebnis, Status (erfüllt/teilweise/nicht erfüllt) – auch nicht erfüllte Anforderungen ehrlich markieren.
+b) Verification matrix: for each requirement, the verification method (analysis/simulation/test), a reference to the concrete test report/run, the result, and its status (met/partially met/not met) – mark unmet requirements honestly too.
 
-c) Architekturdokument finalisieren: Diagramme aus Woche 5 konsolidieren, um Erkenntnisse aus dem tatsächlichen Aufbau (Monat 2–4) ergänzen, falls die reale Architektur abweicht.
+c) Finalize the architecture document: consolidate the diagrams from Week 5, adding insights from the actual build (Months 2–4) wherever the real architecture deviates.
 
-d) README auf finalen Stand bringen: Projektübersicht, Aufbauanleitung (nachvollziehbar für Dritte), Links zu allen Kernreports.
+d) Bring the README up to its final state: project overview, build instructions (reproducible by a third party), links to all core reports.
 
-## Akzeptanzkriterien
-jede der 26 Wochen hat mindestens eine zugehörige Anforderung in der Matrix; Matrix enthält mind. einen Fall "nicht erfüllt"/"teilweise erfüllt" (aus Woche 17/24) mit ehrlicher Begründung.
+## Acceptance Criteria
+every one of the 26 weeks has at least one associated requirement in the matrix; the matrix contains at least one "not met"/"partially met" case (from Week 17/24) with an honest justification.
 
-## Abgabe
-`docs/requirements.md`, `docs/verification_matrix.md`, finales `docs/architecture.md`, finales README.
+## Deliverable
+`docs/requirements.md`, `docs/verification_matrix.md`, final `docs/architecture.md`, final README.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

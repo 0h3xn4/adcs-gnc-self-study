@@ -1,29 +1,29 @@
-# Woche 01 – Mathematische Grundlagen & Lage-Repräsentationen
+# Week 01 – Mathematical Foundations & Attitude Representations
 
-**Monat:** 1 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 1 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Ein AOCS-Lead verlangt eine eigene, testbare Lage-Bibliothek, weil fertige Pakete im Flugsoftware-Kontext nicht ungeprüft übernommen werden dürfen – externe Bibliotheken dienen nur zur Cross-Validierung.
+## Scenario
+An AOCS lead requires your own, testable attitude library, because in a flight-software context off-the-shelf packages can't be adopted without independent verification – external libraries are for cross-validation only.
 
-## Aufgabenstellung
-a) Konvertierungen DCM↔Quaternion, Euler(3-2-1)↔DCM implementieren, jeweils als reine Funktionen.
+## Task
+a) Implement DCM↔quaternion and Euler(3-2-1)↔DCM conversions, each as pure functions.
 
-b) Quaternionenmultiplikation (Konvention explizit dokumentieren, M&C 2.7) und Konjugierte/Inverse implementieren.
+b) Implement quaternion multiplication (document the convention explicitly, M&C 2.7) and the conjugate/inverse.
 
-c) Fehlerquaternion δq = q⊗q\_ref⁻¹ (M&C 2.10) inkl. Kleinwinkel-Näherung δq≈\[δα/2;1\] implementieren.
+c) Implement the error quaternion δq = q⊗q_ref⁻¹ (M&C 2.10) including the small-angle approximation δq≈[δα/2;1].
 
-d) Property-Tests mit ≥1000 Zufallsrotationen: Rundreise DCM→Quat→DCM auf < 1e-9 Frobenius-Abstand, ‖q‖=1 nach jeder Operation.
+d) Property tests with ≥1000 random rotations: round-trip DCM→quat→DCM to < 1e-9 Frobenius distance, ‖q‖=1 after every operation.
 
-e) Gimbal-Lock numerisch nachweisen: 3-2-1-Sequenz nahe θ=90° Pitch konstruieren, Rangverlust der Jacobi-Matrix zeigen, mit der Quaternion-Darstellung derselben Rotation vergleichen.
+e) Demonstrate gimbal lock numerically: construct a 3-2-1 sequence near θ=90° pitch, show the rank loss of the Jacobian, and compare with the quaternion representation of the same rotation.
 
-f) Cross-Validierung derselben 1000 Rotationen gegen `scipy.spatial.transform.Rotation` (Abweichung < 1e-9); scipy bleibt nur Prüfwerkzeug, keine Projektabhängigkeit.
+f) Cross-validate the same 1000 rotations against `scipy.spatial.transform.Rotation` (deviation < 1e-9); scipy remains a verification tool only, not a project dependency.
 
-## Akzeptanzkriterien
-alle Tests grün, Testabdeckung `attitude/` ≥ 95 %, Gimbal-Lock-Nachweis mit Zahlen im devlog.
+## Acceptance Criteria
+all tests green, test coverage of `attitude/` ≥ 95%, gimbal-lock demonstration with numbers in the devlog.
 
-## Abgabe
-`attitude/`-Modul + `tests/test_attitude.py`, devlog mit Gimbal-Lock-Analyse.
+## Deliverable
+`attitude/` module + `tests/test_attitude.py`, devlog with gimbal-lock analysis.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

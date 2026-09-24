@@ -1,33 +1,33 @@
-# Woche 18 – Bahnbestimmung
+# Week 18 – Orbit Determination
 
-**Monat:** 5 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 5 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Monatsziel (Monat 5 – Flight Dynamics (Kernmodul für den Flight-Dynamics-Job))
+## Month Goal (Month 5 – Flight Dynamics (Core Module for the Flight-Dynamics Job))
 
-**Ziel des Monats:** Bahnbestimmung, Manöverplanung, Rendezvous/Proximity-Operationen und Monte-Carlo-Validierung als eigenständiges Toolkit.
+**Month Goal:** Orbit determination, maneuver planning, rendezvous/proximity operations, and Monte Carlo validation as a standalone toolkit.
 
-**Meilenstein M5:** Python-Paket `flight-dynamics-toolkit` – Bahnbestimmung, Manöverplanung/Delta-V-Budget, RPO-Trajektorienplanung inkl. Monte-Carlo-Validierung, gegen Orekit/GMAT cross-validiert.
+**Milestone M5:** Python package `flight-dynamics-toolkit` – orbit determination, maneuver planning/delta-v budget, RPO trajectory planning including Monte Carlo validation, cross-validated against Orekit/GMAT.
 
-**Selbstprüfung Monat 5:** Clohessy-Wiltshire-Gleichungen aus der Bewegungsgleichung herleiten; Delta-V-Budget für ein einfaches Rendezvous-Szenario von Hand überschlagen.
+**Month 5 Self-Check:** Derive the Clohessy-Wiltshire equations from the equations of motion; hand-estimate a delta-v budget for a simple rendezvous scenario.
 
-## Szenario
-Ein Bahnbestimmungs-Ingenieur bekommt nie die wahre Position, nur verrauschte Messungen – diese Woche rechnest du dich zur besten Schätzung durch.
+## Scenario
+An orbit determination engineer never gets the true position, only noisy measurements – this week you work your way to the best estimate.
 
-## Aufgabenstellung
-a) Simulierte Pseudorange-Messungen (GNSS-artig) aus dem Orbit-Propagator (Monat 1) generieren: ≥4 fiktive "Satelliten"-Positionen, Messrauschen (z. B. σ=5 m) und Messrate selbst definieren.
+## Task
+a) Generate simulated pseudorange measurements (GNSS-like) from the orbit propagator (Month 1): define ≥4 fictitious "satellite" positions, measurement noise (e.g. σ=5 m), and the measurement rate yourself.
 
-b) Batch-Least-Squares-Bahnbestimmung (M&C 12.3.2) implementieren: Beobachtungsgleichungen linearisieren, Normalgleichungen lösen, iterieren bis Konvergenz (Kriterium selbst definieren und begründen).
+b) Implement batch least-squares orbit determination (M&C 12.3.2): linearize the observation equations, solve the normal equations, iterate to convergence (define and justify your own convergence criterion).
 
-c) Sequentielles/EKF-basiertes Verfahren (12.3.3, Formalismus aus 6.2.1 auf den Bahnzustand übertragen) als Alternative implementieren.
+c) Implement a sequential/EKF-based method as an alternative (12.3.3, carrying the formalism from 6.2.1 over to the orbit state).
 
-d) Beide Verfahren auf denselben Datensatz anwenden: Konvergenzgeschwindigkeit, Rechenaufwand pro Update, Schätzgüte (Fehler zur bekannten Wahrheit) gegenüberstellen; Kovarianzanalyse (12.3.8) für beide durchführen und interpretieren.
+d) Apply both methods to the same dataset: compare convergence speed, computational cost per update, and estimation quality (error against the known truth); perform and interpret a covariance analysis (12.3.8) for both.
 
-## Akzeptanzkriterien
-beide Verfahren konvergieren auf < 10 m Positionsfehler zur bekannten Wahrheit; Gegenüberstellung mit konkreten Zahlen, nicht nur qualitativ.
+## Acceptance Criteria
+both methods converge to < 10 m position error against the known truth; comparison backed by concrete numbers, not just qualitative.
 
-## Abgabe
-`flight_dynamics/orbit_determination.py` (Batch-LS + EKF), Vergleichsreport mit Kovarianzanalyse.
+## Deliverable
+`flight_dynamics/orbit_determination.py` (batch-LS + EKF), comparison report with covariance analysis.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

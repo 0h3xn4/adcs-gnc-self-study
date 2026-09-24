@@ -1,27 +1,27 @@
-# Woche 11 – Multiplicative EKF für Lageschätzung
+# Week 11 – Multiplicative EKF for Attitude Estimation
 
-**Monat:** 3 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 3 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Der Kern von Monat 3 – ein MEKF, der aus Gyro-Propagation und Vektormessungen eine driftfreie Lageschätzung liefert.
+## Scenario
+The core of Month 3 – an MEKF that produces a drift-free attitude estimate from gyro propagation and vector measurements.
 
-## Aufgabenstellung
-a) Multiplicative-Error-Formulierung (M&C 6.1.3) implementieren: Referenzquaternion propagiert, Fehlerzustand (3-Komponenten-Rotationsvektor) wird geschätzt und multiplikativ zurückgeführt; im devlog begründen, warum additive Quaternion-Filterung (6.1.2) problematisch ist.
+## Task
+a) Implement the multiplicative-error formulation (M&C 6.1.3): the reference quaternion is propagated, the error state (a 3-component rotation vector) is estimated and fed back multiplicatively; in the devlog, explain why additive quaternion filtering (6.1.2) is problematic.
 
-b) Propagation: Quaternion-Kinematik mit Gyromessung inkl. geschätztem Bias (erweiterter Zustand aus Woche 10).
+b) Propagation: quaternion kinematics driven by the gyro measurement including the estimated bias (the augmented state from Week 10).
 
-c) Update: Magnetometer- und Sonnensensor-Vektormessung sequentiell (einzeln), nicht als ein Batch-Messvektor einarbeiten – Unterschied begründen.
+c) Update: incorporate the magnetometer and sun-sensor vector measurements sequentially (one at a time), not as a single batch measurement vector – justify the difference.
 
-d) Validierung gegen den Starrkörper-Simulator (Monat 1) als Wahrheit: Trajektorie mit bekannter Lage, realistischem Sensorrauschen, MEKF darauf laufen lassen, wahren vs. geschätzten Lagefehler über die Zeit plotten.
+d) Validate against the rigid-body simulator (Month 1) as ground truth: run the MEKF on a trajectory with known attitude and realistic sensor noise, and plot the true vs. estimated attitude error over time.
 
-e) Monte-Carlo mit 100 Läufen: RMS-Schätzfehler nach Einschwingzeit als Kennzahl; zeigen, wie sich der RMS-Fehler ändert, wenn das Magnetometer-Rauschen verdoppelt wird.
+e) Monte Carlo with 100 runs: use the RMS estimation error after settling as the metric; show how the RMS error changes when the magnetometer noise is doubled.
 
-## Akzeptanzkriterien
-Schätzfehler konvergiert in allen 100 Läufen; RMS-Fehler nach Einschwingzeit explizit beziffert (Grad) als Referenzwert für Woche 12.
+## Acceptance Criteria
+Estimation error converges in all 100 runs; the RMS error after settling is explicitly quantified (in degrees) as a reference value for Week 12.
 
-## Abgabe
-`estimation/mekf.py`, Monte-Carlo-Report mit RMS-Kennzahl, devlog-Begründung Multiplicative vs. Additive.
+## Deliverable
+`estimation/mekf.py`, Monte Carlo report with the RMS metric, devlog justification of multiplicative vs. additive.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

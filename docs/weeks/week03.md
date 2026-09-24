@@ -1,30 +1,30 @@
-# Woche 03 – Bahnmechanik I (Keplerbahnen)
+# Week 03 – Orbital Mechanics I (Keplerian Orbits)
 
-**Monat:** 1 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 1 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Als Flight-Dynamics-Praktikant reproduzierst du die Bahn eines realen Satelliten aus öffentlichen Bahnelementen (TLE) – eine klassische Eingangsprüfung für jeden Flight-Dynamics-Job.
+## Scenario
+As a flight dynamics intern, you reproduce the orbit of a real satellite from public orbital elements (TLE) – a classic entry test for any flight dynamics job.
 
-## Gegeben
-aktuelles TLE eines LEO-Satelliten (z. B. ISS, von celestrak.org).
+## Given
+current TLE of a LEO satellite (e.g. the ISS, from celestrak.org).
 
-## Aufgabenstellung
-a) Eigener TLE-Parser (kein `sgp4` für die Kernlogik, nur zur späteren Cross-Validierung) für a, e, i, Ω, ω, M.
+## Task
+a) Your own TLE parser (no `sgp4` for the core logic, only for later cross-validation) for a, e, i, Ω, ω, M.
 
-b) Kepler-Gleichung M=E−e·sin(E) per Newton-Verfahren lösen; Konvergenz (Iterationszahl bis Residuum < 1e-10 rad) für kleines und größeres e zeigen.
+b) Solve Kepler's equation M=E−e·sin(E) using Newton's method; show convergence (number of iterations to residual < 1e-10 rad) for both small and larger e.
 
-c) Bahnelemente → Zustandsvektor (r,v) im ECI-Rahmen (M&C 10.2) implementieren.
+c) Implement orbital elements → state vector (r,v) in the ECI frame (M&C 10.2).
 
-d) Zweikörper-Propagation über einen vollen Umlauf; Periode/Perigäumshöhe mit TLE-Erwartung vergleichen (Abweichung erklären – reines Zweikörpermodell weicht ohne J2/Drag ab, das ist erwartet).
+d) Two-body propagation over one full orbit; compare period/perigee altitude with the TLE's expectation (explain the deviation – a pure two-body model without J2/drag is expected to deviate).
 
-e) Cross-Validierung mit `sgp4` oder Orekit; Abweichung nach einem Umlauf in km beziffern.
+e) Cross-validate against `sgp4` or Orekit; quantify the deviation after one orbit in km.
 
-## Akzeptanzkriterien
-Kepler-Löser konvergiert für e∈\[0,0.9\] in < 20 Iterationen auf 1e-10 rad; Zweikörper-Periode weicht < 1e-6 relativ von der Theorie-Periode (aus a, GM) ab.
+## Acceptance Criteria
+Kepler solver converges for e∈[0,0.9] in < 20 iterations to 1e-10 rad; two-body period deviates < 1e-6 relative from the theoretical period (from a, GM).
 
-## Abgabe
-`flight_dynamics/tle_parser.py`, `flight_dynamics/orbit_propagator.py`, Vergleichsplot.
+## Deliverable
+`flight_dynamics/tle_parser.py`, `flight_dynamics/orbit_propagator.py`, comparison plot.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

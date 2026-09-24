@@ -1,37 +1,37 @@
-# Woche 00 – Projektaufsetzung
+# Week 00 – Project Setup
 
-**Monat:** 1 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 1 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Monatsziel (Monat 1 – Grundlagen: Lage- und Bahnmechanik)
+## Month Goal (Month 1 – Fundamentals: Attitude and Orbital Mechanics)
 
-**Ziel des Monats:** Attitude-Repräsentationen, Starrkörperdynamik und Bahnmechanik als eigene, getestete Python-Bibliothek `spacecraft-dynamics-core`.
+**Month Goal:** Attitude representations, rigid-body dynamics, and orbital mechanics as your own, fully tested Python package `spacecraft-dynamics-core`.
 
-**Meilenstein M1:** Python-Paket `spacecraft-dynamics-core` – Lage-Repräsentationen, Starrkörper-Propagator, Orbit-Propagator, vollständig unit-getestet und dokumentiert.
+**Milestone M1:** Python package `spacecraft-dynamics-core` – attitude representations, rigid-body propagator, orbit propagator, fully unit-tested and documented.
 
-**Selbstprüfung Monat 1:** Quaternion-Kinematikgleichung herleiten, Kepler-Gleichung iterativ lösen, Torque-free-Motion für einen symmetrischen Kreisel erklären.
+**Month 1 Self-Check:** Derive the quaternion kinematic equation, solve Kepler's equation iteratively, explain torque-free motion for a symmetric top.
 
-## Szenario
-Wie bei einem neuen Firmenprojekt beginnst du nicht mit Code, sondern mit einer Projektbasis, die 26 Wochen tragen muss.
+## Scenario
+As with a new company project, you don't start with code but with a project foundation that has to carry 26 weeks.
 
-## Aufgabenstellung
-a) Repo `cubesat-gnc-testbed` mit `sim/`, `estimation/`, `control/`, `flight_dynamics/`, `firmware/`, `docs/`, `tests/` anlegen, jedes Verzeichnis mit README-Stub (2–3 Sätze Zweck).
+## Task
+a) Set up the `cubesat-gnc-testbed` repo with `sim/`, `estimation/`, `control/`, `flight_dynamics/`, `firmware/`, `docs/`, `tests/`, each directory with a README stub (2–3 sentences on its purpose).
 
-b) Python-Toolchain (numpy/scipy/matplotlib/pytest, Linter) + pre-commit-Hook, der Tests vor jedem Commit laufen lässt.
+b) Python toolchain (numpy/scipy/matplotlib/pytest, linter) + a pre-commit hook that runs tests before every commit.
 
-c) CI-Workflow (z. B. GitHub Actions), der bei jedem Push `pytest` ausführt – muss von Anfang an grün sein.
+c) CI workflow (e.g. GitHub Actions) that runs `pytest` on every push – must be green from day one.
 
-d) GitHub-Projects-Board mit 6 Meilenstein-Spalten (Monat 1–6) und allen 26 Wochenzielen als Issues.
+d) GitHub Projects board with 6 milestone columns (Month 1–6) and all 26 weekly goals as issues.
 
-e) Hardware-BOM (Abschnitt 3.2 der Übersicht) mit konkreten Bestellnummern finalisieren und bestellen; Lieferzeit gegen Puffer-Woche 17 prüfen.
+e) Finalize the hardware BOM (Section 3.2 of the overview) with concrete part numbers and place the order; check lead time against buffer week 17.
 
-f) M&C Kap. 1 und MES Kap. 1 lesen, je 150–200 Wörter eigene Zusammenfassung (nicht abschreiben, sondern die zentrale fachliche Herausforderung in eigenen Worten benennen).
+f) Read M&C Ch. 1 and MES Ch. 1; write your own 150–200 word summary of each (don't copy — state the central technical challenge in your own words).
 
-## Akzeptanzkriterien
-CI-Badge grün · Board zeigt alle 26 Wochenziele · Hardware-Bestellstatus dokumentiert.
+## Acceptance Criteria
+CI badge green · board shows all 26 weekly goals · hardware order status documented.
 
-## Abgabe
-Commit-Historie (a)–(d), `docs/devlog/week00.md`.
+## Deliverable
+Commit history for (a)–(d), `docs/devlog/week00.md`.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

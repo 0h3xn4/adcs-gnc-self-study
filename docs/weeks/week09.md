@@ -1,36 +1,36 @@
-# Woche 09 – Statische Lagebestimmung
+# Week 09 – Static Attitude Determination
 
-**Monat:** 3 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 3 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Monatsziel (Monat 3 – Attitude Determination & Estimation)
+## Month Goal (Month 3 – Attitude Determination & Estimation)
 
-**Ziel des Monats:** Von der statischen Lagebestimmung zum Echtzeit-MEKF auf echter Hardware.
+**Month Goal:** From static attitude determination to a real-time MEKF running on real hardware.
 
-**Meilenstein M3:** Echtzeit-MEKF läuft auf der Hardware und schätzt die Orientierung aus echten Sensordaten – verglichen mit Software-Simulation und einer unabhängigen Referenzmessung.
+**Milestone M3:** A real-time MEKF runs on the hardware and estimates orientation from real sensor data – compared against the software simulation and an independent reference measurement.
 
-**Selbstprüfung Monat 3:** Unterschied additive vs. multiplicative Quaternion-Fehlerdarstellung im Kalman-Filter erklären; QUEST-Kostenfunktion herleiten.
+**Month 3 Self-Check:** Explain the difference between additive and multiplicative quaternion error representations in the Kalman filter; derive the QUEST cost function.
 
-## Szenario
-Bevor gefiltert wird, muss klar sein, wie eine einzelne Lage-"Momentaufnahme" aus zwei Beobachtungen berechnet wird – Grundlage jedes Sterntracker-/Sonnensensor-Algorithmus.
+## Scenario
+Before filtering, you need to be clear on how a single attitude "snapshot" is computed from two observations – the foundation of every star-tracker/sun-sensor algorithm.
 
-## Gegeben
-zwei Referenzvektoren im Inertialsystem (z. B. Sonnenrichtung, Magnetfeldrichtung) und verrauschte Messungen im körperfesten System.
+## Given
+two reference vectors in the inertial frame (e.g. sun direction, magnetic field direction) and noisy measurements in the body frame.
 
-## Aufgabenstellung
-a) TRIAD (M&C 5.1) implementieren; zeigen, dass die resultierende DCM orthonormal ist (RRᵀ=I auf < 1e-10) und die erste Referenzrichtung exakt, die zweite nur approximativ abbildet.
+## Task
+a) Implement TRIAD (M&C 5.1); show that the resulting DCM is orthonormal (RRᵀ=I to < 1e-10) and that it maps the first reference direction exactly, the second only approximately.
 
-b) Wahba-Kostenfunktion (M&C 5.2) formulieren, QUEST (M&C 5.3.2) inkl. Newton-Raphson-Iteration für den optimalen Eigenwert implementieren.
+b) Formulate Wahba's cost function (M&C 5.2); implement QUEST (M&C 5.3.2) including the Newton-Raphson iteration for the optimal eigenvalue.
 
-c) Für Winkel zwischen den Referenzvektoren von 10° bis 170° (10°-Schritte) den Schätzfehler von TRIAD/QUEST bei fixem Rauschen plotten; erklären, warum ein Winkel nahe 90° optimal ist (M&C 5.5).
+c) For angles between the reference vectors from 10° to 170° (in 10° steps), plot the estimation error of TRIAD/QUEST at fixed noise; explain why an angle near 90° is optimal (M&C 5.5).
 
-d) Degenerierten Fall (fast parallele Referenzvektoren) testen: Implementierung darf nicht stillschweigend falsch antworten, sondern muss erkennbar degradieren/Fehler werfen; diskutieren, wie ein reales System das abfangen müsste.
+d) Test the degenerate case (nearly parallel reference vectors): the implementation must not silently return a wrong answer but must visibly degrade/raise an error; discuss how a real system would need to guard against this.
 
-## Akzeptanzkriterien
-TRIAD/QUEST-DCM auf < 1e-10 orthonormal; Fehlerkurve mit erwartetem Minimum nahe 90°; degenerierter Fall wird erkannt, nicht ignoriert.
+## Acceptance Criteria
+TRIAD/QUEST DCM orthonormal to < 1e-10; error curve with the expected minimum near 90°; the degenerate case is detected, not ignored.
 
-## Abgabe
-`estimation/static_attitude.py`, Fehleranalyse-Plot, devlog-Diskussion des degenerierten Falls.
+## Deliverable
+`estimation/static_attitude.py`, error-analysis plot, devlog discussion of the degenerate case.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

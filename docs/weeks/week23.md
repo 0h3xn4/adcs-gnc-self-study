@@ -1,31 +1,31 @@
-# Woche 23 – Software-in-the-Loop (SIL)
+# Week 23 – Software-in-the-Loop (SIL)
 
-**Monat:** 6 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 6 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Monatsziel (Monat 6 – Integration, SIL/HIL & Bewerbungsportfolio)
+## Month Goal (Month 6 – Integration, SIL/HIL & Job-Application Portfolio)
 
-**Ziel des Monats:** ADCS und Flight Dynamics zu einem Missionsszenario verbinden, ECSS-artig dokumentieren und in ein Bewerbungsportfolio übersetzen.
+**Month Goal:** Combine ADCS and flight dynamics into one mission scenario, document it in an ECSS-style manner, and translate it into a job-application portfolio.
 
-**Meilenstein M6 (Abschluss):** Vollständig integriertes, öffentlich dokumentiertes Repository `cubesat-gnc-testbed` mit SIL+HIL-Demonstration, technischem Bericht und direkt verwertbarem Bewerbungsportfolio.
+**Milestone M6 (final):** A fully integrated, publicly documented `cubesat-gnc-testbed` repository with an SIL+HIL demonstration, a technical report, and a directly usable job-application portfolio.
 
-## Szenario
-Bisher getrennte Simulationsteile müssen jetzt als ein durchgängiges Missionsszenario funktionieren – wie ein Missions-Operator es am Bildschirm verfolgen würde.
+## Scenario
+The simulation pieces that were separate until now have to work as one continuous mission scenario – the way a mission operator would follow it on screen.
 
-## Aufgabenstellung
-a) Ende-zu-Ende-Szenario mit klarer Zeitachse definieren: t=0 Aussetzen (initiale Tip-off-Rotation), t=0..T₁ Detumbling, t=T₁..T₂ Pointing, t=T₂ geplantes Bahnmanöver (Monat 5).
+## Task
+a) Define an end-to-end scenario with a clear timeline: t=0 deployment (initial tip-off rotation), t=0..T₁ detumbling, t=T₁..T₂ pointing, t=T₂ a planned orbit maneuver (Month 5).
 
-b) Orbit-Propagation und Lageregelung software-seitig koppeln: gemeinsamer Zeittakt, definierte Schnittstelle (z. B. liefert die Bahnsimulation die lokale Erdmagnetfeldrichtung, die MEKF/Regler nutzen).
+b) Couple orbit propagation and attitude control on the software side: a shared time step, a defined interface (e.g. the orbit simulation supplies the local Earth-magnetic-field direction that the MEKF/controller uses).
 
-c) Szenario komplett durchsimulieren; wichtigste Zustandsgrößen (Lage, Lagefehler, Bahnhöhe, aktueller Zustandsmaschinen-Modus) in einem gemeinsamen Zeitachsen-Dashboard darstellen.
+c) Run the full scenario simulation end to end; display the key state variables (attitude, attitude error, orbit altitude, current state-machine mode) on one shared timeline dashboard.
 
-d) Mind. einen Fehlerfall einbauen (z. B. verzögertes Detumbling durch höhere Anfangsrotation) und zeigen, dass FDIR korrekt reagiert, bevor das geplante Manöver ausgeführt wird.
+d) Build in at least one fault case (e.g. delayed detumbling due to a higher initial rotation rate) and show that FDIR reacts correctly before the planned maneuver is executed.
 
-## Akzeptanzkriterien
-Szenario läuft durchgängig ohne manuelle Eingriffe von t=0 bis nach dem Manöver; Fehlerfall wird korrekt erkannt, Manöver entsprechend verzögert/abgebrochen statt blind ausgeführt.
+## Acceptance Criteria
+Scenario runs continuously without manual intervention from t=0 to after the maneuver; the fault case is correctly detected, and the maneuver is delayed/aborted accordingly rather than executed blindly.
 
-## Abgabe
-`integration/sil_scenario.py`, Zeitachsen-Dashboard-Plot, devlog-Beschreibung des Fehlerfalls.
+## Deliverable
+`integration/sil_scenario.py`, timeline dashboard plot, devlog description of the fault case.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

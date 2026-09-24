@@ -1,27 +1,27 @@
-# Woche 06 – Hardware-Bring-up
+# Week 06 – Hardware Bring-up
 
-**Monat:** 2 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 2 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Board-Bring-up nach MES Kap. 3 – am ersten Tag funktioniert nichts, bis du es zum Laufen bringst.
+## Scenario
+Board bring-up per MES Ch. 3 – on day one nothing works, until you make it work.
 
-## Aufgabenstellung
-a) Minimal lauffähiges Firmware-Image: Clock-Konfiguration, GPIO toggeln ("Hello World") – vor jedem Sensorzugriff.
+## Task
+a) Minimal working firmware image: clock configuration, toggling a GPIO ("Hello World") – before any sensor access.
 
-b) IMU-Initialisierung über SPI/I2C: Who-Am-I-/Chip-ID-Register auslesen und gegen den Datenblattwert prüfen, BEVOR Nutzdaten gelesen werden.
+b) IMU initialization over SPI/I2C: read the Who-Am-I/chip-ID register and check it against the datasheet value BEFORE reading any payload data.
 
-c) Rohdaten (Accel/Gyro/Magnetometer) auslesen, mittels Sensitivitäts-Registern in physikalische Einheiten (m/s², °/s, µT) skalieren.
+c) Read raw data (accel/gyro/magnetometer), scale it into physical units (m/s², °/s, µT) using the sensitivity registers.
 
-d) Logging-Interface nach MES Kap. 2 ("Example: A Logging Interface") implementieren: ≥3 Log-Level, Timestamps, austauschbares Backend (Adapter-Pattern, sauber vom Aufrufer getrennt).
+d) Implement a logging interface per MES Ch. 2 ("Example: A Logging Interface"): ≥3 log levels, timestamps, a swappable backend (adapter pattern, cleanly decoupled from the caller).
 
-e) Boot-Selbsttest analog MES' Flash-Test-Beispiel: Plausibilitätscheck (Ruhe-Beschleunigung nahe 1 g? Gyro-Rauschen im erwarteten Bereich?), Fehlercode per LED-Blinkmuster bei Fehlschlag.
+e) Boot self-test analogous to MES's flash-test example: plausibility check (rest acceleration near 1 g? gyro noise within the expected range?), error code via LED blink pattern on failure.
 
-## Akzeptanzkriterien
-Who-Am-I-Check schlägt bei bewusst falscher Verdrahtung nachweislich fehl; Ruhemessung |a|=9.81 m/s² auf ±5 %; Log-Backend austauschbar ohne Änderung im aufrufenden Code.
+## Acceptance Criteria
+Who-Am-I check demonstrably fails under deliberately wrong wiring; rest measurement |a|=9.81 m/s² to within ±5%; log backend swappable without changing the calling code.
 
-## Abgabe
-`firmware/` Grundgerüst inkl. `logging/`, Video der Selbsttests, devlog mit Debugging-Verlauf (auch Fehlschläge).
+## Deliverable
+`firmware/` skeleton including `logging/`, video of the self-tests, devlog with the debugging journey (failures included).
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

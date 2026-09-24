@@ -1,25 +1,25 @@
-# Woche 16 – Geschlossener Regelkreis auf Hardware
+# Week 16 – Closed Control Loop on Hardware
 
-**Monat:** 4 · **Status:** ⬜ nicht begonnen
-**Code/Ergebnisse:** _(Link auf den entsprechenden Ordner/Commit im `cubesat-gnc-testbed`-Repo, sobald vorhanden)_
+**Month:** 4 · **Status:** ⬜ Not started
+**Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 
-## Szenario
-Der Moment, auf den das Projekt hinarbeitet – MEKF, Regler und Aktuator laufen erstmals gemeinsam auf echter Hardware.
+## Scenario
+The moment the whole project has been building toward – MEKF, controller, and actuator run together on real hardware for the first time.
 
-## Aufgabenstellung
-a) Testbed final auf der Einachs-Plattform montieren; Reibmoment abschätzen (Auspendelversuch: anstoßen, Abklingzeit der Schwingung messen, grobe Dämpfungskonstante ableiten) – relativiert die Woche-14-Ziele (dort ohne reale Reibung modelliert).
+## Task
+a) Do the final mount of the testbed on the single-axis platform; estimate the friction torque (a free-decay test: give it a push, measure the oscillation's decay time, derive a rough damping constant) – this puts the Week 14 targets in perspective (they were modeled without real friction).
 
-b) MEKF (Woche 12) + Regler (Woche 13/14) + eigene Motoransteuerung (Woche 15) zu einem Regelkreis zusammenführen; Zykluszeiten je Teilsystem dokumentieren (IMU-Sampling, MEKF-Update, Regler-Update, PWM-Update).
+b) Combine the MEKF (Week 12) + controller (Week 13/14) + your own motor drive (Week 15) into one closed control loop; document the cycle time of each subsystem (IMU sampling, MEKF update, controller update, PWM update).
 
-c) Detumbling-Demo: Testbed von Hand in Rotation versetzen, System muss selbstständig abbremsen und in `POINT` übergehen; Zeit bis Stillstand messen und mit der Woche-14-Erwartung vergleichen (Abweichung durch reale Reibung/Rauschen diskutieren).
+c) Detumbling demo: spin the testbed up by hand, the system must brake autonomously and transition into `POINT`; measure the time to standstill and compare it with the Week 14 expectation (discuss the deviation due to real friction/noise).
 
-d) FDIR-Erweiterung: Sättigungserkennung (Wheel nahe Maximaldrehzahl) und Sensorausfallerkennung (Timeout) in die Zustandsmaschine (Woche 8) einbauen, beide Fälle live provozieren (Wheel hochdrehen lassen / IMU-Kabel ziehen) und den `SAFE`-Übergang zeigen.
+d) FDIR extension: add saturation detection (wheel near max speed) and sensor-loss detection (timeout) to the state machine (Week 8); trigger both cases live (spin the wheel up / unplug the IMU cable) and show the `SAFE` transition.
 
-## Akzeptanzkriterien
-Testbed detumbled aus ≥2 verschiedenen Anfangsrotationen selbstständig; beide FDIR-Fälle lösen nachweislich den korrekten Übergang ohne Absturz aus.
+## Acceptance Criteria
+Testbed detumbles autonomously from ≥2 different initial rotations; both FDIR cases demonstrably trigger the correct transition without a crash.
 
-## Abgabe
-Demo-Video (Detumbling + beide Fehlerfälle), `docs/closed_loop_report.md` mit Zykluszeiten und Reibmoment-Abschätzung.
+## Deliverable
+Demo video (detumbling + both fault cases), `docs/closed_loop_report.md` with cycle times and friction-torque estimate.
 
-## Meine Notizen
-_(wird während der Woche von mir selbst befüllt)_
+## My Notes
+_(to be filled in by me during the week)_

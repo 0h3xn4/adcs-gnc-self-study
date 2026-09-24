@@ -1,21 +1,20 @@
-# docs/ – Übersicht
+# docs/ – Overview
 
-- **[weeks/](weeks/)** – ein Praktikumsblatt pro Woche (`week00.md` … `week26.md`):
-  Szenario, Aufgabenstellung, Akzeptanzkriterien, Abgabe – wortgetreu aus dem
-  Curriculum übernommen, plus Statuszeile und einem Notizen-Abschnitt, der
-  während der Woche selbst befüllt wird. Am Anfang jeder Monatsgruppe
-  (Woche 00, 05, 09, 13, 18, 23) steht zusätzlich Monatsziel, Meilenstein und
-  Selbstprüfung.
-- **[devlog/](devlog/)** – ein kurzer, ehrlicher Wochenrückblick pro Woche.
-  Leer bis auf [`TEMPLATE.md`](devlog/TEMPLATE.md); für Woche NN die Vorlage
-  nach `weekNN.md` kopieren und ausfüllen.
-- **[schedule.md](schedule.md)** – Accountability-Struktur und Stundenplan:
-  der Wochenrhythmus (Montag Planung, Freitag Retro), die Tagesstruktur für
-  Theorie- vs. Hardware-Wochen, Umgang mit Pufferwochen.
-- **[glossary.md](glossary.md)** – Abkürzungen/Fachbegriffe aus den
-  Wochenaufgaben (M&C, MEKF, FDIR, CW-Gleichungen, …) kurz aufgelöst, ohne
-  Lösungswege vorwegzunehmen.
+- **[weeks/](weeks/)** – one task sheet per week (`week00.md` … `week26.md`):
+  scenario, task, acceptance criteria, deliverable – copied verbatim from
+  the curriculum, plus a status line and a notes section that gets filled
+  in during the week itself. At the start of each month group (Week 00, 05,
+  09, 13, 18, 23) there's also the month goal, milestone, and self-check.
+- **[devlog/](devlog/)** – a short, honest weekly retro per week. Empty
+  except for [`TEMPLATE.md`](devlog/TEMPLATE.md); for week NN, copy the
+  template to `weekNN.md` and fill it in.
+- **[schedule.md](schedule.md)** – accountability structure and weekly
+  schedule: the weekly rhythm (Monday planning, Friday retro), the daily
+  structure for theory vs. hardware weeks, and how to handle buffer weeks.
+- **[glossary.md](glossary.md)** – abbreviations/terminology from the
+  weekly tasks (M&C, MEKF, FDIR, CW equations, …) briefly spelled out,
+  without giving away solution paths.
 
-Der eigentliche fachliche Code/die Ergebnisse (Simulation, Firmware, Tests)
-entstehen nicht hier, sondern im separaten `cubesat-gnc-testbed`-Repo – siehe
-[Haupt-README](../README.md#zwei-repos).
+The actual technical code/results (simulation, firmware, tests) don't live
+here – they go in the separate `cubesat-gnc-testbed` repo. See the
+[main README](../README.md#two-repos).
