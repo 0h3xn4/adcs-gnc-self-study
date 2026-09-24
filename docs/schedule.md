@@ -17,6 +17,22 @@ structure from memory.
 
 30 h/week spread across 5 days of 6 h each, in fixed thematic blocks rather than free-form "whatever" – alternating like lecture/exercise/lab/colloquium at a university. The times are a suggestion (adjust to your own biorhythm); the **order and block types per weekday** are the real core: cognitively demanding theory/derivations in the morning, more mechanical coding/lab work in the afternoon. Within each block, deep-work intervals of about 90 minutes with short breaks, no multitasking between theory and coding in the same time window.
 
+Every week runs one of two daily patterns – **Theory/Software** or
+**Hardware/Lab** (both tables below). Here's which one applies each month:
+
+| Month | Weeks | Schedule |
+| --- | --- | --- |
+| 1 – Fundamentals | 00–04 | Theory/Software |
+| 2 – Sensing & Embedded Bring-up | 05–08 | Hardware/Lab |
+| 3 – Attitude Determination & Estimation | 09–11 | Theory/Software |
+| 3 – Attitude Determination & Estimation | 12 | Hardware/Lab |
+| 4 – Attitude Control | 13 | Theory/Software |
+| 4 – Attitude Control | 14–17 | Hardware/Lab |
+| 5 – Flight Dynamics | 18–22 | Theory/Software |
+| 6 – Integration & Portfolio | 23, 25 | Theory/Software |
+| 6 – Integration & Portfolio | 24 | Hardware/Lab |
+| 6 – Integration & Portfolio | 26 | Theory/Software (buffer – content is portfolio/writing, see Notes below) |
+
 ### Theory/Software Weeks (Months 1, 3, 5, plus Weeks 13, 18–22, 23, 25)
 
 | Day | 09:00–12:00 | 13:00–16:00 | 16:00–17:00 | Focus |
