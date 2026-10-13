@@ -11,7 +11,48 @@ fluctuate — treat every number here as "roughly this much," not a quote,
 and check current listings before ordering. Where a specific clone/
 AliExpress price isn't verifiable, that's noted instead of guessed.
 
-## Core parts
+## Buying it all from one place (Germany: Amazon.de)
+
+Checked directly: Amazon.de is the one retailer that actually stocks every
+category below — dev board, IMU, motor, driver board, testbed bearing,
+logic analyzer, multimeter, breadboard kit, and buck converter. German
+specialist shops don't cover the full list: Reichelt/Mouser/Digikey carry
+the electronics (board, driver ICs, breadboards) but not RC motors or
+lazy-susan bearings; BerryBase carries the IMU but not the motor or
+bearing either. Amazon.de is the only single checkout that covers
+everything.
+
+| Item | Example Amazon.de listing found | Approx. price |
+| --- | --- | --- |
+| MCU dev board | [STM32 Nucleo-F411RE](https://www.amazon.de/-/en/NUCLEO-F411RE-Nucleo-64-Development-STM32F411RE-Connectivity/dp/B07JYF8RRB) | ~€38–43 |
+| 9-DoF IMU breakout | [SparkFun ICM-20948 breakout](https://www.amazon.de/-/en/SparkFun-9DoF-IMU-Breakout-ICM-20948/dp/B07WGGDX8X) or [Pimoroni ICM20948 breakout](https://www.amazon.de/Pimoroni-ICM20948-Motion-Sensor-Breakout/dp/B07RLK17ZV) | ~€20–30 |
+| Small BLDC motor | search "2208 gimbal brushless motor" — several listings, e.g. [FEICHAO 2208](https://www.amazon.de/FEICHAO-B%C3%BCrstenloser-Geschwei%C3%9Ft-Aircraft-Multicopter/dp/B08R1LL6TK) | ~€12–20 |
+| 3-phase motor driver (ready-made) | [DRV8313-based "SimpleFOC Mini" driver board](https://www.amazon.de/CASNO-einfache-Mini-Motor-Treiberplatine-Steueralgorithmus-FOC-Steuerungstreiber/dp/B0D56R2GP7) — no soldering needed, better than the DIY option below | ~€6–13 |
+| Low-friction 1-axis platform | lazy-susan ball-bearing turntable, search "Drehtellerlager Kugellager" | ~€20–40 (German Amazon pricing runs higher than US/UK for this item) |
+| USB logic analyzer | [24MHz/8-channel clone](https://www.amazon.de/APKLVSR-Analyzer-USB-Kabel-8-Kanal-kompatibel/dp/B0CFFGS5XF) | ~€8–12 |
+| Digital multimeter | [Hanmatek basic DMM](https://www.amazon.de/Digitalmultimeter-HANMATEK-Messbereichserkennung-NCV-Widerstand-Spannungserkennung/dp/B07JLXVPT4) or similar | ~€9–17 |
+| Breadboard + jumper wire kit | search "Breadboard Jumper Kabel Set" | ~€7–15 |
+| Adjustable DC-DC buck converter | [MP1584EN module, pack of several](https://www.amazon.de/MP1584-MP1584EN-verstellbarer-Abw%C3%A4rtswandler-Spannungsmodul/dp/B0CSTC97KQ) | ~€6–10 (for a pack — unit cost is a euro or two) |
+
+**Estimated total via Amazon.de alone: roughly €170–200** for the core
+parts above, plus a wall power adapter and misc small parts
+(~€20–30 more, also on Amazon.de). That's noticeably more than ordering
+from multiple specialist sources (below) — mainly because the Nucleo
+board and the bearing turntable both run 2–3× pricier on Amazon.de than
+their cheapest source elsewhere.
+
+**One split worth making even if you want "mostly one place":** order the
+Nucleo board from [Mouser.de](https://www.mouser.de) or
+[Digikey.de](https://www.digikey.de) instead (~€14–18 there vs. ~€40 on
+Amazon.de) — both ship to Germany, and that single swap saves ~€20–25 on
+its own. Everything else can stay on Amazon.de in one cart.
+
+## Core parts (cheapest overall, ordering from multiple sources)
+
+Prices below are from the original international research (USD, mostly
+US distributors) — Mouser.de, Digikey.de, and RS Components Germany serve
+the same parts to Germany at roughly the same EUR magnitude, so treat
+"$" here as "≈€" rather than converting.
 
 | Item | Used from | Cheapest verified option | Approx. price | Cheaper alternative |
 | --- | --- | --- | --- | --- |
