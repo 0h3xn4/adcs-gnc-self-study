@@ -20,27 +20,39 @@ household-style bearing straddles categories that German retail splits
 across different specialist shops. The closest to one-stop, with real
 listings confirmed, is **three retailers, zero marketplaces**:
 
-| Item | Retailer | Example listing found | Approx. price |
-| --- | --- | --- | --- |
-| MCU dev board | [Conrad.de](https://www.conrad.de) | STMicroelectronics NUCLEO-F411RE | ~€17.64 (+VAT) — cheapest found anywhere, including the marketplaces |
-| Digital multimeter | Conrad.de | VOLTCRAFT VC131 or KS Tools 1501495 | ~€17–22 |
-| Breadboard + jumper wire kit | Conrad.de | Joy-it breadboard + TRU Components jumper wires | ~€10–15 |
-| Low-friction 1-axis platform | Conrad.de | Modellbau axial deep-groove ball bearing ("Axial-Rillenkugellager", series 511xx) — a real thrust bearing, arguably a better fit than a lazy-susan | ~€5–15 depending on size |
-| Small BLDC motor | Conrad.de | browse "Flugmodell Brushless-Elektromotoren" / "Modellbau-Elektromotoren" for a small (~2204–2208-class) outrunner — Conrad doesn't stock a motor marketed specifically as a "gimbal" motor, but a small RC aircraft brushless motor is the same hardware | ~€15–25 (pricier than the gimbal-specific marketplace option, since you're paying for RC-grade branding) |
-| 9-DoF IMU breakout | [BerryBase.de](https://www.berrybase.de) | SparkFun ICM-20948 (Qwiic) breakout, or the 10-DoF ICM20948 module for Raspberry Pi Pico | ~€17–30 |
-| USB logic analyzer | BerryBase.de | SparkFun USB Logic Analyzer, 24MHz/8-channel | ~€20–30 |
-| 3-phase motor driver | [Reichelt.de](https://www.reichelt.de) | bare **L6234** driver IC (SOP-20, 7–52 V, 5 A) + a small perfboard breakout you solder yourself | IC ~€4–6 + perfboard/headers ~€5 = **~€10** |
-| Adjustable DC-DC buck converter | Reichelt.de or Conrad.de | general step-down module (check current stock — neither confirmed an MP1584-specific adjustable module at search time) | ~€5–10 |
+A note on the stock column below: I don't have live access to these
+retailers' sites (direct page fetches to conrad.de/reichelt.de/
+berrybase.de are blocked from this environment), so "stock" here comes
+from search-engine snapshots of their pages, which are sometimes
+contradictory between pages for the same product and can lag the live
+site. Treat it as "recently seen as available," not a real-time
+guarantee — confirm in the shop's own cart before relying on it.
+
+| Item | Retailer | Specific listing found | Stock signal seen | Approx. price |
+| --- | --- | --- | --- | --- |
+| MCU dev board | [Conrad.de](https://www.conrad.de) | STMicroelectronics NUCLEO-F411RE | 28 units, same-day dispatch | ~€17.64 (+VAT) |
+| Digital multimeter | Conrad.de | VOLTCRAFT VC131 | consistently 2,500+ units across multiple pages — very safe bet | ~€17–22 |
+| Breadboard + jumper wire kit | Conrad.de | Joy-it Breadboard 830 | 698 units | ~€10–15 |
+| Low-friction 1-axis platform | Conrad.de | axial ball bearing, e.g. FAG 51101 (26mm) or FAG 51105 (42mm) | 17–108 units depending on size, several sizes in stock | ~€5–15 |
+| Small BLDC motor | Conrad.de | Pichler "Boost 18" (1050 kV, 35mm×28mm, 75g) — closest in-stock match; a specific 2208 motor I checked was explicitly **not available** and a Reely 960kV motor was **sold out**, so verify the exact model before ordering | only 4 units seen — **tightest item on this list, check first** | ~€15–25 |
+| 9-DoF IMU breakout | [BerryBase.de](https://www.berrybase.de) | **Adafruit** ICM-20948 (STEMMA QT) — more consistently shown available than the SparkFun version, which had one listing marked "currently not available" | 34 units on the category page, 4 on a product page — consistently positive signal | ~€20 |
+| USB logic analyzer | BerryBase.de | SparkFun USB Logic Analyzer, 24MHz/8-channel | **Conflicting signals** — one page showed 7 in stock, another (and the French-locale page) showed "no longer available" — this is the least certain item here | ~€30 |
+| 3-phase motor driver | [Reichelt.de](https://www.reichelt.de) | bare **L6234** driver IC (SOP-20, 7–52 V, 5 A), [product page](https://www.reichelt.de/motortreiber-3-fach-sop-20-l-6234-pd-p109314.html) + a small perfboard breakout you solder yourself | not confirmed in this pass — check the product page directly | IC ~€4–6 + perfboard/headers ~€5 = **~€10** |
+| Adjustable DC-DC buck converter | Reichelt.de or Conrad.de | general step-down module | not confirmed — neither retailer's listing for an MP1584-specific adjustable module showed up in search | ~€5–10 |
 
 **Estimated total: roughly €110–150** for the core parts above, plus a
 wall power adapter and misc small parts (~€20–30 more, also from
-Conrad.de). Three checkouts instead of one, and two honest compromises
-compared with the marketplace options:
+Conrad.de). Three checkouts instead of one, plus the caveats above:
 
-- **The motor** is a generic small RC brushless outrunner rather than a
-  motor specifically marketed for camera gimbals — physically the same
-  class of 3-phase BLDC hardware, just pricier because it's sold as an
-  RC-hobby part rather than a commodity gimbal motor.
+- **The motor** is the weakest-confirmed item: the specific small,
+  cheap options are low-stock or already out at Conrad. Check "Flugmodell
+  Brushless-Elektromotoren" for whatever's currently in stock in the
+  ~30–80g range rather than committing to one exact model from this
+  table.
+- **The logic analyzer** at BerryBase had genuinely conflicting
+  availability signals between pages — worth double-checking directly,
+  or falling back to Reichelt's general test-equipment section if it's
+  actually out.
 - **The motor driver** stays the DIY bare-IC-plus-perfboard route, since
   no German retailer (marketplace or not) turned up a ready-made DRV8313/
   SimpleFOC-style board — Pololu sells a ready brushless controller
