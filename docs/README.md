@@ -11,6 +11,9 @@
 - **[schedule.md](schedule.md)** – accountability structure and weekly
   schedule: the weekly rhythm (Monday planning, Friday retro), the daily
   structure for theory vs. hardware weeks, and how to handle buffer weeks.
+- **[hardware.md](hardware.md)** – concrete, budget-focused parts list for
+  the physical testbed (MCU board, IMU, motor, driver, logic analyzer, …)
+  with approximate prices and cheaper alternatives.
 - **[glossary.md](glossary.md)** – abbreviations/terminology from the
   weekly tasks (M&C, MEKF, FDIR, CW equations, …) briefly spelled out,
   without giving away solution paths.
