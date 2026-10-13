@@ -20,4 +20,4 @@
 
 The actual technical code/results (simulation, firmware, tests) don't live
 here – they go in the separate `cubesat-gnc-testbed` repo. See the
-[main README](../README.md#two-repos).
+[main README](../README.md#what-this-repo-is-and-isnt).
