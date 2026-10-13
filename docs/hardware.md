@@ -11,41 +11,41 @@ fluctuate — treat every number here as "roughly this much," not a quote,
 and check current listings before ordering. Where a specific clone/
 AliExpress price isn't verifiable, that's noted instead of guessed.
 
-## Buying it all from one place (Germany: Amazon.de)
+## Buying it in Germany, no Amazon, no eBay
 
-Checked directly: Amazon.de is the one retailer that actually stocks every
-category below — dev board, IMU, motor, driver board, testbed bearing,
-logic analyzer, multimeter, breadboard kit, and buck converter. German
-specialist shops don't cover the full list: Reichelt/Mouser/Digikey carry
-the electronics (board, driver ICs, breadboards) but not RC motors or
-lazy-susan bearings; BerryBase carries the IMU but not the motor or
-bearing either. Amazon.de is the only single checkout that covers
-everything.
+Checked directly, deliberately excluding both marketplaces: **no single
+traditional German retailer stocks everything on this list** — the mix of
+professional dev board, maker-electronics IMU, RC-hobby motor, and a
+household-style bearing straddles categories that German retail splits
+across different specialist shops. The closest to one-stop, with real
+listings confirmed, is **three retailers, zero marketplaces**:
 
-| Item | Example Amazon.de listing found | Approx. price |
-| --- | --- | --- |
-| MCU dev board | [STM32 Nucleo-F411RE](https://www.amazon.de/-/en/NUCLEO-F411RE-Nucleo-64-Development-STM32F411RE-Connectivity/dp/B07JYF8RRB) | ~€38–43 |
-| 9-DoF IMU breakout | [SparkFun ICM-20948 breakout](https://www.amazon.de/-/en/SparkFun-9DoF-IMU-Breakout-ICM-20948/dp/B07WGGDX8X) or [Pimoroni ICM20948 breakout](https://www.amazon.de/Pimoroni-ICM20948-Motion-Sensor-Breakout/dp/B07RLK17ZV) | ~€20–30 |
-| Small BLDC motor | search "2208 gimbal brushless motor" — several listings, e.g. [FEICHAO 2208](https://www.amazon.de/FEICHAO-B%C3%BCrstenloser-Geschwei%C3%9Ft-Aircraft-Multicopter/dp/B08R1LL6TK) | ~€12–20 |
-| 3-phase motor driver (ready-made) | [DRV8313-based "SimpleFOC Mini" driver board](https://www.amazon.de/CASNO-einfache-Mini-Motor-Treiberplatine-Steueralgorithmus-FOC-Steuerungstreiber/dp/B0D56R2GP7) — no soldering needed, better than the DIY option below | ~€6–13 |
-| Low-friction 1-axis platform | lazy-susan ball-bearing turntable, search "Drehtellerlager Kugellager" | ~€20–40 (German Amazon pricing runs higher than US/UK for this item) |
-| USB logic analyzer | [24MHz/8-channel clone](https://www.amazon.de/APKLVSR-Analyzer-USB-Kabel-8-Kanal-kompatibel/dp/B0CFFGS5XF) | ~€8–12 |
-| Digital multimeter | [Hanmatek basic DMM](https://www.amazon.de/Digitalmultimeter-HANMATEK-Messbereichserkennung-NCV-Widerstand-Spannungserkennung/dp/B07JLXVPT4) or similar | ~€9–17 |
-| Breadboard + jumper wire kit | search "Breadboard Jumper Kabel Set" | ~€7–15 |
-| Adjustable DC-DC buck converter | [MP1584EN module, pack of several](https://www.amazon.de/MP1584-MP1584EN-verstellbarer-Abw%C3%A4rtswandler-Spannungsmodul/dp/B0CSTC97KQ) | ~€6–10 (for a pack — unit cost is a euro or two) |
+| Item | Retailer | Example listing found | Approx. price |
+| --- | --- | --- | --- |
+| MCU dev board | [Conrad.de](https://www.conrad.de) | STMicroelectronics NUCLEO-F411RE | ~€17.64 (+VAT) — cheapest found anywhere, including the marketplaces |
+| Digital multimeter | Conrad.de | VOLTCRAFT VC131 or KS Tools 1501495 | ~€17–22 |
+| Breadboard + jumper wire kit | Conrad.de | Joy-it breadboard + TRU Components jumper wires | ~€10–15 |
+| Low-friction 1-axis platform | Conrad.de | Modellbau axial deep-groove ball bearing ("Axial-Rillenkugellager", series 511xx) — a real thrust bearing, arguably a better fit than a lazy-susan | ~€5–15 depending on size |
+| Small BLDC motor | Conrad.de | browse "Flugmodell Brushless-Elektromotoren" / "Modellbau-Elektromotoren" for a small (~2204–2208-class) outrunner — Conrad doesn't stock a motor marketed specifically as a "gimbal" motor, but a small RC aircraft brushless motor is the same hardware | ~€15–25 (pricier than the gimbal-specific marketplace option, since you're paying for RC-grade branding) |
+| 9-DoF IMU breakout | [BerryBase.de](https://www.berrybase.de) | SparkFun ICM-20948 (Qwiic) breakout, or the 10-DoF ICM20948 module for Raspberry Pi Pico | ~€17–30 |
+| USB logic analyzer | BerryBase.de | SparkFun USB Logic Analyzer, 24MHz/8-channel | ~€20–30 |
+| 3-phase motor driver | [Reichelt.de](https://www.reichelt.de) | bare **L6234** driver IC (SOP-20, 7–52 V, 5 A) + a small perfboard breakout you solder yourself | IC ~€4–6 + perfboard/headers ~€5 = **~€10** |
+| Adjustable DC-DC buck converter | Reichelt.de or Conrad.de | general step-down module (check current stock — neither confirmed an MP1584-specific adjustable module at search time) | ~€5–10 |
 
-**Estimated total via Amazon.de alone: roughly €170–200** for the core
-parts above, plus a wall power adapter and misc small parts
-(~€20–30 more, also on Amazon.de). That's noticeably more than ordering
-from multiple specialist sources (below) — mainly because the Nucleo
-board and the bearing turntable both run 2–3× pricier on Amazon.de than
-their cheapest source elsewhere.
+**Estimated total: roughly €110–150** for the core parts above, plus a
+wall power adapter and misc small parts (~€20–30 more, also from
+Conrad.de). Three checkouts instead of one, and two honest compromises
+compared with the marketplace options:
 
-**One split worth making even if you want "mostly one place":** order the
-Nucleo board from [Mouser.de](https://www.mouser.de) or
-[Digikey.de](https://www.digikey.de) instead (~€14–18 there vs. ~€40 on
-Amazon.de) — both ship to Germany, and that single swap saves ~€20–25 on
-its own. Everything else can stay on Amazon.de in one cart.
+- **The motor** is a generic small RC brushless outrunner rather than a
+  motor specifically marketed for camera gimbals — physically the same
+  class of 3-phase BLDC hardware, just pricier because it's sold as an
+  RC-hobby part rather than a commodity gimbal motor.
+- **The motor driver** stays the DIY bare-IC-plus-perfboard route, since
+  no German retailer (marketplace or not) turned up a ready-made DRV8313/
+  SimpleFOC-style board — Pololu sells a ready brushless controller
+  through exp-tech.de, but it does its own FOC internally, which defeats
+  the point of Week 15's "implement your own commutation" task.
 
 ## Core parts (cheapest overall, ordering from multiple sources)
 
