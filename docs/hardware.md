@@ -11,6 +11,17 @@ fluctuate — treat every number here as "roughly this much," not a quote,
 and check current listings before ordering. Where a specific clone/
 AliExpress price isn't verifiable, that's noted instead of guessed.
 
+**IMU note:** earlier versions of this doc recommended the ICM-20948.
+That chip is now listed as **Obsolete** at DigiKey (both the bare IC and
+TDK InvenSense's own eval board), and a SparkFun forum thread confirms
+ongoing supply issues with no known restock date — this is a genuine
+manufacturer end-of-life, not just one retailer being out of stock. The
+curriculum's own hardware section already names an acceptable
+alternative class ("ICM-20948- *oder* BNO08x-Klasse"), so the
+recommendation below is now the **BNO08x family** (BNO085/BNO086)
+instead, which showed healthy stock at a real distributor (895 units at
+Mouser) rather than hobby-shop-only availability.
+
 ## Buying it in Germany, no Amazon, no eBay
 
 Checked directly, deliberately excluding both marketplaces: **no single
@@ -35,12 +46,13 @@ guarantee — confirm in the shop's own cart before relying on it.
 | Breadboard + jumper wire kit | Conrad.de | Joy-it Breadboard 830 | 698 units | ~€10–15 |
 | Low-friction 1-axis platform | Conrad.de | axial ball bearing, e.g. FAG 51101 (26mm) or FAG 51105 (42mm) | 17–108 units depending on size, several sizes in stock | ~€5–15 |
 | Small BLDC motor | Conrad.de | Pichler "Boost 18" (1050 kV, 35mm×28mm, 75g) — closest in-stock match; a specific 2208 motor I checked was explicitly **not available** and a Reely 960kV motor was **sold out**, so verify the exact model before ordering | only 4 units seen — **tightest item on this list, check first** | ~€15–25 |
-| 9-DoF IMU breakout | [BerryBase.de](https://www.berrybase.de) | **Adafruit** ICM-20948 (STEMMA QT) — more consistently shown available than the SparkFun version, which had one listing marked "currently not available" | 34 units on the category page, 4 on a product page — consistently positive signal | ~€20 |
+| 9-DoF IMU breakout | [BerryBase.de](https://www.berrybase.de) | **Adafruit BNO085** (STEMMA QT) or **SparkFun BNO086** (Qwiic) — not the ICM-20948, which is now manufacturer-obsolete (see note above) | Adafruit BNO085: 78 units; SparkFun BNO086: 100+ units — both healthy | ~€27 |
 | USB logic analyzer | BerryBase.de | SparkFun USB Logic Analyzer, 24MHz/8-channel | **Conflicting signals** — one page showed 7 in stock, another (and the French-locale page) showed "no longer available" — this is the least certain item here | ~€30 |
 | 3-phase motor driver | [Reichelt.de](https://www.reichelt.de) | bare **L6234** driver IC (SOP-20, 7–52 V, 5 A), [product page](https://www.reichelt.de/motortreiber-3-fach-sop-20-l-6234-pd-p109314.html) + a small perfboard breakout you solder yourself | not confirmed in this pass — check the product page directly | IC ~€4–6 + perfboard/headers ~€5 = **~€10** |
 | Adjustable DC-DC buck converter | Reichelt.de or Conrad.de | general step-down module | not confirmed — neither retailer's listing for an MP1584-specific adjustable module showed up in search | ~€5–10 |
 
-**Estimated total: roughly €110–150** for the core parts above, plus a
+**Estimated total: roughly €115–155** (updated for the BNO08x swap
+above) for the core parts above, plus a
 wall power adapter and misc small parts (~€20–30 more, also from
 Conrad.de). Three checkouts instead of one, plus the caveats above:
 
@@ -69,7 +81,7 @@ the same parts to Germany at roughly the same EUR magnitude, so treat
 | Item | Used from | Cheapest verified option | Approx. price | Cheaper alternative |
 | --- | --- | --- | --- | --- |
 | MCU dev board | Week 6 onward | [STM32 Nucleo-F411RE](https://www.digikey.com/en/products/detail/stmicroelectronics/NUCLEO-F411RE/4866485) — good HAL docs, on-board ST-Link debugger, no extra programmer needed | ~$13–18 (Arrow/Digi-Key/Mouser) | None cheaper with comparable documentation quality — this is the one place not to cut corners, since Week 6–8 debugging depends on usable docs |
-| 9-DoF IMU breakout | Week 6 onward | [Adafruit ICM-20948 (STEMMA QT)](https://www.adafruit.com/product/4554) | ~$20 | Generic ICM-20948/MPU-9250 clone boards exist on AliExpress for ~$5–8, but quality/documentation is unverified — fine if you're comfortable debugging a flaky breakout, riskier for Week 6's first bring-up |
+| 9-DoF IMU breakout | Week 6 onward | [Adafruit BNO085 (STEMMA QT)](https://www.adafruit.com/product/4754) or SparkFun BNO086 (Qwiic) — the ICM-20948 this doc used to recommend is now manufacturer-obsolete at DigiKey, see note above | ~$27 | Generic ICM-20948/MPU-9250 clone boards still circulate on AliExpress for ~$5–8, but you'd be building on a discontinued chip with thinning community support — only worth it if you already have one on hand |
 | Small BLDC motor (reaction-wheel analog) | Week 7 onward | Sensorless 2208/2204 gimbal motor (e.g. Lumenier GX2208-80 class) | ~$10–18 | Skip the Hall-sensor version (~$20–40, e.g. JD-Power DCH-3518C) unless you specifically want Hall-based speed sensing in Week 7 instead of BEMF zero-crossing — the curriculum's Task explicitly allows either |
 | 3-phase motor driver | Week 15 onward | Bare **L6234** or **DRV8313** driver IC (~$3–4 each, e.g. [RS Components](https://ph.rs-online.com/web/p/motor-driver-ics/1961930)) + a small perfboard breakout you solder yourself | IC ~$4 + perfboard/headers ~$5 = **~$9** | A pre-made breakout (old SparkFun/MikroE "Brushless Click") runs ~$20–30 when available — worth it only if SMD soldering (HTSSOP/PowerSO package) is a hard blocker for you |
 | Low-friction 1-axis platform | Week 16 onward | 4″ lazy-susan ball-bearing turntable ([Busy Bee](https://www.busybeetools.com/products/lazy-susan-4in), ~$9; or [Simply Bearings](https://www.simplybearings.co.uk/products/lazy-4), ~£4.50 ex VAT) | ~$9 | **Free–$3:** a bifilar fishing-line suspension (two lines from a fixed point to the testbed) — the curriculum explicitly calls this out as a valid low-cost alternative to an air-bearing table |
@@ -94,12 +106,14 @@ the same parts to Germany at roughly the same EUR magnitude, so treat
 
 ## Estimated total
 
-**Core parts + supporting basics: roughly $100–140.** The two items worth
-not cutting (MCU board, IMU) are also the two with the best documentation
-— a $5 clone IMU that doesn't match its datasheet costs you more time in
-Week 6 debugging than the $15 you saved. Everything else (motor, driver,
-testbed platform, logic analyzer) has a genuinely free-to-cheap path if
-needed:
+**Core parts + supporting basics: roughly $105–145** (the IMU moved from
+~$20 to ~$27 with the BNO08x swap above). The two items worth not cutting
+(MCU board, IMU) are also the two with the best documentation and the
+healthiest supply — a $5 clone built on the now-obsolete ICM-20948 costs
+you more time in Week 6 debugging, and more risk of it simply not being
+replaceable later, than the ~$20 you'd save. Everything else (motor,
+driver, testbed platform, logic analyzer) has a genuinely free-to-cheap
+path if needed:
 
 - Fishing-line suspension instead of a bearing turntable: **saves ~$9**
 - Sensorless motor instead of Hall-sensor: **saves ~$10–25**
