@@ -81,7 +81,10 @@ in [`docs/schedule.md`](docs/schedule.md). The short version:
 3. Set Week 00's row in [`PROGRESS.md`](PROGRESS.md) to 🟨.
 4. Skim [`docs/schedule.md`](docs/schedule.md) and block your calendar
    accordingly.
-5. Unfamiliar abbreviation in a task sheet (MEKF, FDIR, CW equations, …)?
+5. Order the hardware for Week 00's Task (e) — see
+   [`docs/hardware.md`](docs/hardware.md) for a concrete, budget-focused
+   parts list with prices.
+6. Unfamiliar abbreviation in a task sheet (MEKF, FDIR, CW equations, …)?
    Check [`docs/glossary.md`](docs/glossary.md) before going to the source
    chapter.
 
@@ -109,6 +112,7 @@ docs/
   weeks/week00…26.md     – task sheets (scenario/task/acceptance/deliverable)
   devlog/TEMPLATE.md     – template for weekly retros
   schedule.md            – accountability structure & weekly schedule
+  hardware.md            – budget hardware parts list with prices
   glossary.md            – abbreviations/terminology
 scripts/
   create_issues.sh       – creates GitHub milestones/issues for all weeks
