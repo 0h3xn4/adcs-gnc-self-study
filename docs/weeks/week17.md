@@ -1,4 +1,4 @@
-# Week 17 (Buffer) – Test Campaign & Characterization
+# Week 17 – Test Campaign & Characterization (Buffer)
 
 **Month:** 4 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_

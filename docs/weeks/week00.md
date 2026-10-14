@@ -25,7 +25,7 @@ c) CI workflow (e.g. GitHub Actions) that runs `pytest` on every push – must b
 
 d) GitHub Projects board with 6 milestone columns (Month 1–6) and all 26 weekly goals as issues.
 
-e) Finalize the hardware BOM (Section 3.2 of the overview) with concrete part numbers and place the order; check lead time against buffer week 17.
+e) Finalize the hardware BOM (see [docs/hardware.md](../hardware.md) for a concrete, budget-focused starting list) with concrete part numbers and place the order; check lead time against buffer week 17.
 
 f) Read M&C Ch. 1 and MES Ch. 1; write your own 150–200 word summary of each (don't copy — state the central technical challenge in your own words).
 

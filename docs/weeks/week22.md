@@ -1,4 +1,4 @@
-# Week 22 (Buffer) – Autonomous Orbit Control
+# Week 22 – Autonomous Orbit Control (Buffer)
 
 **Month:** 5 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
