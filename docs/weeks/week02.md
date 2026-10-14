@@ -2,6 +2,7 @@
 
 **Month:** 1 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
+**Reference key:** M&C = Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control* · MES = Elecia White, *Making Embedded Systems* — full abbreviation list: [glossary.md](../glossary.md#reference-literature).
 
 ## Scenario
 Your rigid-body propagator will later serve as the reference for the MEKF (Month 3) and the controller (Month 4) – it must conserve energy/angular momentum cleanly over long time spans.

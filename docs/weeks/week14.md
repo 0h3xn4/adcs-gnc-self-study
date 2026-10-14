@@ -2,6 +2,7 @@
 
 **Month:** 4 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
+**Reference key:** M&C = Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control* · MES = Elecia White, *Making Embedded Systems* — full abbreviation list: [glossary.md](../glossary.md#reference-literature).
 
 ## Scenario
 The job posting asks for "tune parameters to meet performance targets" – this week you define your own measurable performance targets and demonstrate them.

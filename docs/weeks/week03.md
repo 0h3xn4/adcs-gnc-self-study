@@ -2,6 +2,7 @@
 
 **Month:** 1 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
+**Reference key:** M&C = Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control* · MES = Elecia White, *Making Embedded Systems* — full abbreviation list: [glossary.md](../glossary.md#reference-literature).
 
 ## Scenario
 As a flight dynamics intern, you reproduce the orbit of a real satellite from public orbital elements (TLE) – a classic entry test for any flight dynamics job.

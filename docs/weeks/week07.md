@@ -2,6 +2,7 @@
 
 **Month:** 2 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
+**Reference key:** M&C = Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control* · MES = Elecia White, *Making Embedded Systems* — full abbreviation list: [glossary.md](../glossary.md#reference-literature).
 
 ## Scenario
 A reaction wheel without precise timing is useless – this week builds the deterministic time base for Month 3/4.

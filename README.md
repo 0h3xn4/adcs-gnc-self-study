@@ -31,6 +31,22 @@ first task in [Week 00](docs/weeks/week00.md). If you're ever unsure where
 something belongs: **any technical content goes in that other repo, never
 here.**
 
+## The two reference books (M&C / MES)
+
+Every week's Task cites one or both of these by abbreviation — you'll see
+them from Week 00 onward, so here they are up front:
+
+- **M&C** = Markley & Crassidis, *Fundamentals of Spacecraft Attitude
+  Determination and Control* — the attitude/orbital-mechanics textbook
+  (kinematics, estimation, control, orbital perturbations).
+- **MES** = Elecia White, *Making Embedded Systems*, 2nd edition — the
+  firmware/embedded-systems textbook (architecture, I/O, state machines).
+
+A citation like "M&C §2.7" means section 2.7 of that book. These are the
+primary sources you read from each week — see
+[docs/glossary.md](docs/glossary.md#reference-literature) for every other
+abbreviation used in the task sheets.
+
 ## How a week works
 
 Every week follows the same loop:
@@ -117,8 +133,5 @@ docs/
 scripts/
   create_issues.sh       – creates GitHub milestones/issues for all weeks
 ```
-
-- **M&C** – Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control*
-- **MES** – Elecia White, *Making Embedded Systems*, 2nd edition
 
 > The structure and templates of this repo were set up with Claude Code. All technical content is developed independently, without AI assistance, in the companion project repo.

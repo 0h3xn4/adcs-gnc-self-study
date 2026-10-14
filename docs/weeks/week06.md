@@ -2,6 +2,7 @@
 
 **Month:** 2 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
+**Reference key:** M&C = Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control* · MES = Elecia White, *Making Embedded Systems* — full abbreviation list: [glossary.md](../glossary.md#reference-literature).
 
 ## Scenario
 Board bring-up per MES Ch. 3 – on day one nothing works, until you make it work.
