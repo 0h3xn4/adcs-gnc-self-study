@@ -3,6 +3,7 @@
 **Month:** 1 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 **Reference key:** M&C = Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control* · MES = Elecia White, *Making Embedded Systems* — full abbreviation list: [glossary.md](../glossary.md#reference-literature).
+**Practice first:** before attempting the Task below, work through the cited M&C/MES section(s)' own worked examples and end-of-chapter problems – the Task assumes that practice, not just a read-through.
 
 ## Scenario
 An AOCS lead requires your own, testable attitude library, because in a flight-software context off-the-shelf packages can't be adopted without independent verification – external libraries are for cross-validation only.

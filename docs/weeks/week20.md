@@ -3,6 +3,7 @@
 **Month:** 5 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
 **Reference key:** M&C = Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control* · MES = Elecia White, *Making Embedded Systems* — full abbreviation list: [glossary.md](../glossary.md#reference-literature).
+**Practice first:** before attempting the Task below, work through the cited M&C/MES section(s)' own worked examples and end-of-chapter problems – the Task assumes that practice, not just a read-through.
 
 ## Scenario
 Two spacecraft approach each other – the core competency of the flight dynamics role.
