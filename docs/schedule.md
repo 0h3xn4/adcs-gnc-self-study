@@ -23,17 +23,18 @@ Every week runs one of two daily patterns – **Theory/Software** or
 | Month | Weeks | Schedule |
 | --- | --- | --- |
 | 1 – Fundamentals | 00–04 | Theory/Software |
-| 2 – Sensing & Embedded Bring-up | 05–08 | Hardware/Lab |
+| 2 – Sensing & Embedded Bring-up | 05 | Theory/Software (architecture/datasheet planning – "before the soldering iron comes out") |
+| 2 – Sensing & Embedded Bring-up | 06–08 | Hardware/Lab |
 | 3 – Attitude Determination & Estimation | 09–11 | Theory/Software |
 | 3 – Attitude Determination & Estimation | 12 | Hardware/Lab |
-| 4 – Attitude Control | 13 | Theory/Software |
-| 4 – Attitude Control | 14–17 | Hardware/Lab |
+| 4 – Attitude Control | 13–14 | Theory/Software (14 is simulation-only – tuning/targets, no hardware yet) |
+| 4 – Attitude Control | 15–17 | Hardware/Lab |
 | 5 – Flight Dynamics | 18–22 | Theory/Software |
 | 6 – Integration & Portfolio | 23, 25 | Theory/Software |
 | 6 – Integration & Portfolio | 24 | Hardware/Lab |
 | 6 – Integration & Portfolio | 26 | Theory/Software (buffer – content is portfolio/writing, see Notes below) |
 
-### Theory/Software Weeks (Months 1, 3, 5, plus Weeks 13, 18–22, 23, 25)
+### Theory/Software Weeks (see the table above for exactly which weeks)
 
 | Day | 09:00–12:00 | 13:00–16:00 | 16:00–17:00 | Focus |
 | --- | --- | --- | --- | --- |
@@ -43,7 +44,7 @@ Every week runs one of two daily patterns – **Theory/Software** or
 | Thursday | Resolve open questions for the week (re-read the book, app notes, official docs – deliberately without AI) | Further work/deepen understanding of the weekly goal | Code review of your own work, refactoring | Going deeper |
 | Friday | Wrap up the week: tests green, docs complete | Write the retro + update the GitHub Projects board for next week | Buffer/catch-up | Wrap-up & planning |
 
-### Hardware/Lab Weeks (Months 2, 4, plus Week 12, 24)
+### Hardware/Lab Weeks (see the table above for exactly which weeks)
 
 | Day | 09:00–12:00 | 13:00–16:00 | 16:00–17:00 | Focus |
 | --- | --- | --- | --- | --- |

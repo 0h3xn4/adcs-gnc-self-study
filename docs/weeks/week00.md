@@ -2,6 +2,8 @@
 
 **Month:** 1 · **Status:** ⬜ Not started
 **Code/Results:** _(Link to the corresponding folder/commit in the `cubesat-gnc-testbed` repo, once available)_
+**Reference key:** M&C = Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control* · MES = Elecia White, *Making Embedded Systems* — full abbreviation list: [glossary.md](../glossary.md#reference-literature).
+**Practice first:** before attempting the Task below, work through the cited M&C/MES section(s)' own worked examples and end-of-chapter problems – the Task assumes that practice, not just a read-through.
 
 ## Month Goal (Month 1 – Fundamentals: Attitude and Orbital Mechanics)
 
@@ -23,7 +25,7 @@ c) CI workflow (e.g. GitHub Actions) that runs `pytest` on every push – must b
 
 d) GitHub Projects board with 6 milestone columns (Month 1–6) and all 26 weekly goals as issues.
 
-e) Finalize the hardware BOM (Section 3.2 of the overview) with concrete part numbers and place the order; check lead time against buffer week 17.
+e) Finalize the hardware BOM (see [docs/hardware.md](../hardware.md) for a concrete, budget-focused starting list) with concrete part numbers and place the order; check lead time against buffer week 17.
 
 f) Read M&C Ch. 1 and MES Ch. 1; write your own 150–200 word summary of each (don't copy — state the central technical challenge in your own words).
 

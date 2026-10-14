@@ -31,6 +31,55 @@ first task in [Week 00](docs/weeks/week00.md). If you're ever unsure where
 something belongs: **any technical content goes in that other repo, never
 here.**
 
+## The two reference books (M&C / MES)
+
+Every week's Task cites one or both of these by abbreviation — you'll see
+them from Week 00 onward, so here they are up front:
+
+- **M&C** = Markley & Crassidis, *Fundamentals of Spacecraft Attitude
+  Determination and Control* — the attitude/orbital-mechanics textbook
+  (kinematics, estimation, control, orbital perturbations).
+- **MES** = Elecia White, *Making Embedded Systems*, 2nd edition — the
+  firmware/embedded-systems textbook (architecture, I/O, state machines).
+
+A citation like "M&C §2.7" means section 2.7 of that book. These are the
+primary sources you read from each week — see
+[docs/glossary.md](docs/glossary.md#reference-literature) for every other
+abbreviation used in the task sheets.
+
+**Getting the books:** both are standard titles, available new from their
+publishers (no Amazon/eBay needed, consistent with the hardware sourcing
+in [docs/hardware.md](docs/hardware.md)) or used/secondhand, and most
+university libraries (physical or via inter-library loan) carry at least
+M&C, since it's the standard spacecraft-attitude textbook:
+
+- **M&C** – [Springer](https://www.springer.com/978-1-4939-0801-1) (ISBN
+  978-1-4939-0801-1 print / 978-1-4939-0802-8 eBook).
+- **MES** – [O'Reilly](https://www.oreilly.com/library/view/-/9781098151539/)
+  2nd edition, March 2024 (print/eBook ISBNs vary slightly by seller –
+  check the listing matches "2nd edition, 2024" before buying).
+
+## Prerequisites
+
+This is a self-study program, not an introductory one — it assumes you can
+already do the following comfortably, since no week teaches it from
+scratch:
+
+- **Math:** linear algebra (matrices, eigenvalues/eigenvectors, vector
+  spaces), multivariable calculus, and ordinary differential equations
+  (you'll integrate and linearize them, not just recognize them).
+- **Programming:** solid Python (Week 00 onward: packages, testing,
+  numpy/scipy) and at least basic C (Week 06 onward: firmware on a
+  microcontroller).
+- **Electronics, at a hobbyist level:** reading a datasheet, using a
+  multimeter, breadboarding, not being afraid of a soldering iron (Week 05
+  onward).
+
+If any of those feel shaky, that's a sign to shore them up *before*
+Week 00 — not a reason not to start, but starting Week 01 without being
+able to invert a matrix by hand will make the first month miserable
+rather than challenging.
+
 ## How a week works
 
 Every week follows the same loop:
@@ -117,8 +166,5 @@ docs/
 scripts/
   create_issues.sh       – creates GitHub milestones/issues for all weeks
 ```
-
-- **M&C** – Markley & Crassidis, *Fundamentals of Spacecraft Attitude Determination and Control*
-- **MES** – Elecia White, *Making Embedded Systems*, 2nd edition
 
 > The structure and templates of this repo were set up with Claude Code. All technical content is developed independently, without AI assistance, in the companion project repo.
