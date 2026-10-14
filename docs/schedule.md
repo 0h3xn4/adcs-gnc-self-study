@@ -23,27 +23,45 @@ the name of a content module (and its milestone/self-check), not a literal
 calendar month — see the calendar-week column to know where you actually
 are.
 
-| Month | Curriculum weeks | Calendar weeks | Schedule |
-| --- | --- | --- | --- |
-| 1 – Fundamentals | 00–04 | 1–8 | Theory/Software |
-| 2 – Sensing & Embedded Bring-up | 05 | 9–11 (shared w/ 06) | Theory/Software (architecture/datasheet planning – "before the soldering iron comes out") |
-| 2 – Sensing & Embedded Bring-up | 06–08 | 9–14 | Hardware/Lab |
-| 3 – Attitude Determination & Estimation | 09–11 | 15–20 (shared w/ 12) | Theory/Software |
-| 3 – Attitude Determination & Estimation | 12 | 15–20 | Hardware/Lab |
-| 4 – Attitude Control | 13–14 | 21–28 | Theory/Software (14 is simulation-only – tuning/targets, no hardware yet) |
-| 4 – Attitude Control | 15–17 | 21–28 | Hardware/Lab |
-| 5 – Flight Dynamics | 18–22 | 29–36 | Theory/Software |
-| 6 – Integration & Portfolio | 23, 25 | 37–42 | Theory/Software |
-| 6 – Integration & Portfolio | 24 | 37–42 | Hardware/Lab |
-| 6 – Integration & Portfolio | 26 | 37–42 | Theory/Software (buffer – content is portfolio/writing, see Notes below) |
+| Curriculum week | Month | Schedule | Calendar weeks | Paired with |
+| --- | --- | --- | --- | --- |
+| 00 | 1 | Theory/Software | 1–3 | 01 |
+| 01 | 1 | Theory/Software | 1–3 | 00 |
+| 02 | 1 | Theory/Software | 4–6 | 03 |
+| 03 | 1 | Theory/Software | 4–6 | 02 |
+| 04 | 1 | Theory/Software | 7–8 | _(alone)_ |
+| 05 | 2 | Theory/Software (architecture/datasheet planning – "before the soldering iron comes out") | 9–11 | 06 |
+| 06 | 2 | Hardware/Lab | 9–11 | 05 |
+| 07 | 2 | Hardware/Lab | 12–14 | 08 |
+| 08 | 2 | Hardware/Lab | 12–14 | 07 |
+| 09 | 3 | Theory/Software | 15–17 | 10 |
+| 10 | 3 | Theory/Software | 15–17 | 09 |
+| 11 | 3 | Theory/Software | 18–20 | 12 |
+| 12 | 3 | Hardware/Lab | 18–20 | 11 |
+| 13 | 4 | Theory/Software | 21–23 | 14 |
+| 14 | 4 | Theory/Software (simulation-only – tuning/targets, no hardware yet) | 21–23 | 13 |
+| 15 | 4 | Hardware/Lab | 24–26 | 16 |
+| 16 | 4 | Hardware/Lab | 24–26 | 15 |
+| 17 | 4 | Hardware/Lab (buffer) | 27–28 | _(alone)_ |
+| 18 | 5 | Theory/Software | 29–31 | 19 |
+| 19 | 5 | Theory/Software | 29–31 | 18 |
+| 20 | 5 | Theory/Software | 32–34 | 21 |
+| 21 | 5 | Theory/Software | 32–34 | 20 |
+| 22 | 5 | Theory/Software (buffer) | 35–36 | _(alone)_ |
+| 23 | 6 | Theory/Software | 37–39 | 24 |
+| 24 | 6 | Hardware/Lab | 37–39 | 23 |
+| 25 | 6 | Theory/Software | 40–42 | 26 |
+| 26 | 6 | Theory/Software (buffer – content is portfolio/writing, see Notes below) | 40–42 | 25 |
 
-Read the "Calendar weeks" column as the window each **pair** of
-curriculum-weeks shares, not a strict one-to-one row mapping — e.g. Weeks
-00+01 run across calendar weeks 1–3, Weeks 02+03 across 4–6, and Week 04
-(the odd one out in Month 1) gets calendar weeks 7–8 to itself. Same
-pattern inside every other month. You don't need to track this
-precisely — it's here so you can sanity-check "am I roughly on pace,"
-not as a hard deadline.
+A pair sharing a calendar-week range doesn't mean working on both at once
+— do them in order, same as always; the shared range is just "these two
+fit inside this 3-week window together." Note a few pairs mix schedule
+types (05+06, 23+24): you run the first week's daily template, then
+switch to the second's partway through that window — a Theory/Software
+week paired with a Hardware/Lab week doesn't change which days are
+which, just when the switch-over happens. You don't need to track any of
+this precisely — it's here so you can sanity-check "am I roughly on
+pace," not as a hard deadline.
 
 ## Accountability Structure
 

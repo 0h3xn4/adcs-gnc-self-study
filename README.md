@@ -98,14 +98,17 @@ Every week follows the same loop:
      Criteria are met.
    - Jot rough notes into that week's "My Notes" section in `weekNN.md`
      whenever something's worth remembering.
-4. **Friday: write a devlog entry.** Copy
+4. **At the end of the week's work, write a devlog entry.** Copy
    [`docs/devlog/TEMPLATE.md`](docs/devlog/TEMPLATE.md) to
    `docs/devlog/weekNN.md` and fill it in — short and honest, what worked
    and what didn't. This is also the raw material for the portfolio
    articles in Week 26, so don't skip it even when a week went badly.
-5. **Next Monday: move to `weekNN+1.md`** and repeat. At the start of each
-   month (Weeks 00, 05, 09, 13, 18, 23) the file also has that month's
-   goal, milestone, and self-check — read those too.
+5. **Once the Acceptance Criteria are met, move to `weekNN+1.md`** and
+   repeat — at 20 h/week that's usually 7–8 working days in, not 5 (see
+   [When: the weekly rhythm](#when-the-weekly-rhythm) below), so let the
+   Acceptance Criteria decide when a week is done, not the calendar. At
+   the start of each month (Weeks 00, 05, 09, 13, 18, 23) the file also
+   has that month's goal, milestone, and self-check — read those too.
 
 ## When: the weekly rhythm
 
