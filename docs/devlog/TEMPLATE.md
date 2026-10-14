@@ -10,7 +10,7 @@
 ## Open questions / next steps
 
 ## Time spent
-_(rough figure, e.g. to check against the 30 h/week in the_ [schedule](../schedule.md)_)_
+_(rough figure, e.g. to check against the 20 h/week in the_ [schedule](../schedule.md)_)_
 
 ---
 

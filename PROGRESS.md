@@ -1,6 +1,6 @@
 # Progress Overview
 
-Central status page for the 26-week program. Update the status by hand: ⬜ Not started → 🟨 In progress → ✅ Done. Weekly rhythm/workflow: [docs/schedule.md](docs/schedule.md).
+Central status page for the 27-week curriculum (Weeks 00–26), paced at 20 h/week over ~42 calendar weeks (~9–10 months) — see [docs/schedule.md](docs/schedule.md) for the calendar-week map. Update the status by hand: ⬜ Not started → 🟨 In progress → ✅ Done. Weekly rhythm/workflow: [docs/schedule.md](docs/schedule.md).
 
 ## Milestones
 

@@ -1,11 +1,13 @@
 # ADCS/GNC Self-Study – Course Repo
 
-A 6-month, self-directed course in spacecraft ADCS/GNC (attitude
-determination & control, guidance/navigation/control) — run like a
-university course, with weekly assignments, acceptance criteria, and a
-milestone each month. This repo is the **course binder**: assignments,
-progress tracking, and weekly retros. It contains no technical work itself
-— see [What this repo is (and isn't)](#what-this-repo-is-and-isnt) below.
+A self-directed course in spacecraft ADCS/GNC (attitude determination &
+control, guidance/navigation/control) — run like a university course,
+with weekly assignments, acceptance criteria, and a milestone per module.
+At 20 h/week it runs ~42 calendar weeks (roughly 9–10 months) — see
+[docs/schedule.md](docs/schedule.md) for the exact pacing. This repo is
+the **course binder**: assignments, progress tracking, and weekly retros.
+It contains no technical work itself — see
+[What this repo is (and isn't)](#what-this-repo-is-and-isnt) below.
 
 → [Progress Overview](PROGRESS.md) · → [docs/](docs/) for full details
 
@@ -107,17 +109,22 @@ Every week follows the same loop:
 
 ## When: the weekly rhythm
 
-Roughly 30 h/week, 5 days, fixed blocks rather than free-form work — the
-full breakdown (with time-of-day tables for theory vs. hardware weeks) is
-in [`docs/schedule.md`](docs/schedule.md). The short version:
+Roughly 20 h/week, 5 days of ~4 h, fixed blocks rather than free-form work
+— the full breakdown (with time-of-day tables for theory vs. hardware
+weeks, and the calendar-week map) is in
+[`docs/schedule.md`](docs/schedule.md). The short version:
 
-- **Monday morning:** always theory/planning — read the week's reference
-  chapter, sketch the approach.
+- **Monday (or your first block of the week):** always theory/planning —
+  read the week's reference chapter, sketch the approach.
 - **Tue–Thu:** implement, validate against a reference, go deeper on open
   questions.
-- **Friday afternoon:** always retro + planning — tests green, devlog
-  written, `PROGRESS.md` updated, next week's board planned. This is the
-  fixed anchor that keeps the whole thing accountable.
+- **Friday (or your last block):** always retro + planning — tests green,
+  devlog written, `PROGRESS.md` updated, next week's board planned. This
+  is the fixed anchor that keeps the whole thing accountable.
+- **A curriculum-week now typically takes ~1.5 calendar weeks**, not 1 —
+  at 20 h/week the Task was never going to fit in 5 days the way it did
+  at 30 h/week. `docs/schedule.md` paces two curriculum-weeks across
+  three calendar weeks so you're not tracking half-weeks by hand.
 - **Weeks 0, 17, 22, 26 are buffer weeks** — same structure, but for
   catching up or going deeper instead of new material.
 
@@ -137,7 +144,11 @@ in [`docs/schedule.md`](docs/schedule.md). The short version:
    Check [`docs/glossary.md`](docs/glossary.md) before going to the source
    chapter.
 
-## The 6 months, at a glance
+## The 6 modules, at a glance
+
+"Month" below names a content module and its milestone — not a literal
+calendar month; see [`docs/schedule.md`](docs/schedule.md) for how long
+each one actually takes at 20 h/week.
 
 - **Month 1 – Fundamentals: Attitude and Orbital Mechanics:** Attitude representations, rigid-body dynamics, and orbital mechanics as your own, fully tested Python package `spacecraft-dynamics-core`.
 - **Month 2 – Sensing, Actuation & Embedded Bring-up:** Get the hardware testbed running – IMU live, motor driven via PWM, a state machine as the FDIR foundation.

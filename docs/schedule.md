@@ -1,9 +1,49 @@
 # Weekly Rhythm & Accountability Structure
 
-Translated verbatim from the curriculum overview (Sections 5 and 7) – this is
-the pacemaker for every single week, independent of that week's technical
+Originally translated verbatim from the curriculum overview (Sections 5 and
+7) at 30 h/week; **restructured below for 20 h/week**, since that's what's
+actually available. The curriculum's own Tasks/Acceptance Criteria are
+unchanged — nothing got cut, the calendar just got longer. This is the
+pacemaker for every single week, independent of that week's technical
 topic. Check back here when needed instead of trying to reconstruct the
 structure from memory.
+
+## The 20 h/week restructure, in one paragraph
+
+Each curriculum-week's Task was sized for 30 h. At 20 h/week that's 1.5×
+the calendar time per task, which doesn't divide evenly into whole weeks —
+so instead of tracking half-weeks, pace **two consecutive curriculum-weeks
+across three calendar weeks** (2×30 h = 60 h = 3×20 h, exactly). Whenever a
+month has a leftover odd week at the end, give it a full 2 calendar weeks
+to itself instead of squeezing it to 1.5 — those leftover weeks are
+disproportionately the buffer/lighter weeks anyway, so the extra breathing
+room is free. The result: **27 curriculum-weeks (00–26) now take 42
+calendar weeks, roughly 9–10 months instead of 6.** "Month N" below stays
+the name of a content module (and its milestone/self-check), not a literal
+calendar month — see the calendar-week column to know where you actually
+are.
+
+| Month | Curriculum weeks | Calendar weeks | Schedule |
+| --- | --- | --- | --- |
+| 1 – Fundamentals | 00–04 | 1–8 | Theory/Software |
+| 2 – Sensing & Embedded Bring-up | 05 | 9–11 (shared w/ 06) | Theory/Software (architecture/datasheet planning – "before the soldering iron comes out") |
+| 2 – Sensing & Embedded Bring-up | 06–08 | 9–14 | Hardware/Lab |
+| 3 – Attitude Determination & Estimation | 09–11 | 15–20 (shared w/ 12) | Theory/Software |
+| 3 – Attitude Determination & Estimation | 12 | 15–20 | Hardware/Lab |
+| 4 – Attitude Control | 13–14 | 21–28 | Theory/Software (14 is simulation-only – tuning/targets, no hardware yet) |
+| 4 – Attitude Control | 15–17 | 21–28 | Hardware/Lab |
+| 5 – Flight Dynamics | 18–22 | 29–36 | Theory/Software |
+| 6 – Integration & Portfolio | 23, 25 | 37–42 | Theory/Software |
+| 6 – Integration & Portfolio | 24 | 37–42 | Hardware/Lab |
+| 6 – Integration & Portfolio | 26 | 37–42 | Theory/Software (buffer – content is portfolio/writing, see Notes below) |
+
+Read the "Calendar weeks" column as the window each **pair** of
+curriculum-weeks shares, not a strict one-to-one row mapping — e.g. Weeks
+00+01 run across calendar weeks 1–3, Weeks 02+03 across 4–6, and Week 04
+(the odd one out in Month 1) gets calendar weeks 7–8 to itself. Same
+pattern inside every other month. You don't need to track this
+precisely — it's here so you can sanity-check "am I roughly on pace,"
+not as a hard deadline.
 
 ## Accountability Structure
 
@@ -15,48 +55,53 @@ structure from memory.
 
 ## Weekly Schedule
 
-30 h/week spread across 5 days of 6 h each, in fixed thematic blocks rather than free-form "whatever" – alternating like lecture/exercise/lab/colloquium at a university. The times are a suggestion (adjust to your own biorhythm); the **order and block types per weekday** are the real core: cognitively demanding theory/derivations in the morning, more mechanical coding/lab work in the afternoon. Within each block, deep-work intervals of about 90 minutes with short breaks, no multitasking between theory and coding in the same time window.
+20 h/week spread across 5 days of 4 h each (two ~2 h blocks/day), in fixed
+thematic blocks rather than free-form "whatever" – alternating like
+lecture/exercise/lab/colloquium at a university, just shorter days. The
+times are a suggestion (adjust to your own biorhythm and availability –
+many people at 20 h/week are fitting this around a day job, so two evening
+blocks or a weekend-heavy split work just as well as the morning/afternoon
+framing below); the **order and block types per weekday** are the real
+core: cognitively demanding theory/derivations first, more mechanical
+coding/lab work second. Within each block, one deep-work interval of about
+90 minutes with a short break on either side.
 
 Every week runs one of two daily patterns – **Theory/Software** or
-**Hardware/Lab** (both tables below). Here's which one applies each month:
+**Hardware/Lab** (both tables below); see the table above for which one
+applies when.
 
-| Month | Weeks | Schedule |
-| --- | --- | --- |
-| 1 – Fundamentals | 00–04 | Theory/Software |
-| 2 – Sensing & Embedded Bring-up | 05 | Theory/Software (architecture/datasheet planning – "before the soldering iron comes out") |
-| 2 – Sensing & Embedded Bring-up | 06–08 | Hardware/Lab |
-| 3 – Attitude Determination & Estimation | 09–11 | Theory/Software |
-| 3 – Attitude Determination & Estimation | 12 | Hardware/Lab |
-| 4 – Attitude Control | 13–14 | Theory/Software (14 is simulation-only – tuning/targets, no hardware yet) |
-| 4 – Attitude Control | 15–17 | Hardware/Lab |
-| 5 – Flight Dynamics | 18–22 | Theory/Software |
-| 6 – Integration & Portfolio | 23, 25 | Theory/Software |
-| 6 – Integration & Portfolio | 24 | Hardware/Lab |
-| 6 – Integration & Portfolio | 26 | Theory/Software (buffer – content is portfolio/writing, see Notes below) |
+### Theory/Software Weeks
 
-### Theory/Software Weeks (see the table above for exactly which weeks)
+| Day | Block 1 (~2 h) | Block 2 (~2 h) | Focus |
+| --- | --- | --- | --- |
+| Monday | Theory: read the chapter, work through derivations by hand | Exercise: work the chapter's problem set; sketch the module design/pseudocode for the week | Understand before coding |
+| Tuesday | Implementation: code the week's core algorithm | Continue implementation; write unit tests | Execution |
+| Wednesday | Debugging/finishing up | Validate against a reference (plots, metrics, cross-check); devlog entry (short, honest: what worked, what didn't) | Validation |
+| Thursday | Resolve open questions for the week (re-read the book, app notes, official docs – deliberately without AI) | Further work/deepen understanding of the weekly goal; code review of your own work, refactoring | Going deeper |
+| Friday | Wrap up the week: tests green, docs complete | Write the retro; update the GitHub Projects board for next week | Wrap-up & planning |
 
-| Day | 09:00–12:00 | 13:00–16:00 | 16:00–17:00 | Focus |
-| --- | --- | --- | --- | --- |
-| Monday | Theory: read the chapter, work through derivations by hand | Exercise: work the chapter's problem set | Sketch the module design/pseudocode for the week | Understand before coding |
-| Tuesday | Implementation: code the week's core algorithm | Continue implementation | Write unit tests | Execution |
-| Wednesday | Debugging/finishing up | Validate against a reference (plots, metrics, cross-check) | Devlog entry (short, honest: what worked, what didn't) | Validation |
-| Thursday | Resolve open questions for the week (re-read the book, app notes, official docs – deliberately without AI) | Further work/deepen understanding of the weekly goal | Code review of your own work, refactoring | Going deeper |
-| Friday | Wrap up the week: tests green, docs complete | Write the retro + update the GitHub Projects board for next week | Buffer/catch-up | Wrap-up & planning |
+### Hardware/Lab Weeks
 
-### Hardware/Lab Weeks (see the table above for exactly which weeks)
+| Day | Block 1 (~2 h) | Block 2 (~2 h) | Focus |
+| --- | --- | --- | --- |
+| Monday | Theory/datasheet and schematic study | Circuit build/wiring, hardware safety check; prepare the firmware skeleton | Preparation |
+| Tuesday | Lab: write firmware, test on hardware | Continue the lab work; debugging with logic analyzer/multimeter | Bring-up |
+| Wednesday | Lab: measurements/characterization | Continue the lab work; devlog including measurement data/photos | Characterization |
+| Thursday | Integrate into the software simulator or overall system | Test campaign (work through the test matrix from Section 6); evaluation | Integration |
+| Friday | Wrap up the week: docs, save video/measurement data | Retro; planning for next week | Wrap-up & planning |
 
-| Day | 09:00–12:00 | 13:00–16:00 | 16:00–17:00 | Focus |
-| --- | --- | --- | --- | --- |
-| Monday | Theory/datasheet and schematic study | Circuit build/wiring, hardware safety check | Prepare the firmware skeleton | Preparation |
-| Tuesday | Lab: write firmware, test on hardware | Continue the lab work | Debugging with logic analyzer/multimeter | Bring-up |
-| Wednesday | Lab: measurements/characterization | Continue the lab work | Devlog including measurement data/photos | Characterization |
-| Thursday | Integrate into the software simulator or overall system | Test campaign (work through the test matrix from Section 6) | Evaluation | Integration |
-| Friday | Wrap up the week: docs, save video/measurement data | Retro + planning for next week | Buffer | Wrap-up & planning |
+A single curriculum-week's Monday–Friday rhythm above still applies day to
+day, but because each day now covers less ground, a task-week typically
+runs 7–8 working days (about 1.5 calendar weeks) rather than 5 — that's
+exactly what the paired-weeks model above accounts for. In practice this
+mostly means: don't panic if Friday arrives and you're still mid-Thursday's
+content: the next calendar week's Monday is still inside the same
+curriculum-week's budget roughly half the time (see the pairing table
+above), so sliding by a few days is the plan, not a failure.
 
 ### Notes
 
 - **Buffer weeks (Week 0, 17, 22, 26):** same daily structure, but content flexibly filled with catch-up work or stretch goals from Section 4.
-- **Keep the fixed weekly anchors:** Monday morning is always theory/planning, Friday afternoon is always retro+planning – that's the actual accountability mechanism, independent of the week's topic.
-- **30 h is a target, not a rigid cage:** if a topic (e.g. FOC in Week 15) needs more time, pull it from the following week's buffer rather than sacrificing quality – that's what the buffer weeks are for.
-- **No weekend work planned** (sustainability over 26 weeks matters more than weekly hours); if needed, Saturday morning can serve as an optional catch-up slot, not counted toward the 30 h.
+- **Keep the fixed weekly anchors:** Monday morning (or your first block of the week) is always theory/planning, Friday afternoon (or your last block) is always retro+planning – that's the actual accountability mechanism, independent of the week's topic.
+- **20 h is a target, not a rigid cage:** if a topic (e.g. FOC in Week 15) needs more time, pull it from the following week's buffer rather than sacrificing quality – that's what the buffer weeks are for.
+- **No weekend work planned** (sustainability over a 42-calendar-week program matters more than weekly hours); if needed, a weekend morning can serve as an optional catch-up slot, not counted toward the 20 h.
